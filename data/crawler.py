@@ -2,6 +2,8 @@ import os
 import json
 from scraper import fetch_page, extract_image_links, get_next_page
 from processor import process_image
+import urllib.request
+
 
 STATE_FILE = "state.json"
 RAW_DATA_DIR = "./raw_data"
@@ -9,11 +11,10 @@ PROCESSED_DATA_DIR = "./processed_data"
 
 
 def save_image(url, category):
-    response = requests.get(url, stream=True)
+    response = urllib.request.urlopen(url)
     filename = os.path.join(RAW_DATA_DIR, category, url.split('/')[-1])
     with open(filename, 'wb') as file:
-        for chunk in response.iter_content(chunk_size=8192):
-            file.write(chunk)
+        file.write(response.read())
     process_image(filename.split('/')[-1], category)  # Process the image once saved
 
 
