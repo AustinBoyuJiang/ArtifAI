@@ -1,2 +1,0 @@
-created with ai: https://www.artstation.com/search?sort_by=relevance&category_ids_include=27&tags_include=CreatedWithAI
-not created with ai: https://www.artstation.com/search?sort_by=relevance&category_ids_include=27&tags_exclude=CreatedWithAI
