@@ -25,6 +25,8 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 
 * Training the AI model and additional related tasks.
 
+* Website deployment
+
 ## Project Roadmap
 
 ### Data Collection
