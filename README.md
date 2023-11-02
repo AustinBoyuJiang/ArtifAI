@@ -6,11 +6,11 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 
 ## Task Completions
 
-**2023-09-10** | Initiated the project.
+**2023-09-10** | Project Inception.
 
-**2023-09-18** | Completed the task of crawling image URLs from ArtStation.
+**2023-09-18** | Achieved successful extraction of image URLs from ArtStation through advanced web crawling techniques.
 
-**2023-10-31** | Accomplished the task of downloading images from URLs and logging their status in a local JSON file for future reference.
+**2023-10-31** | Executed proficient image retrieval from designated URLs and pioneered the implementation of a local JSON database for meticulous tracking and future utilization.
 
 
 ## Ongoing Tasks:
@@ -26,6 +26,14 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 * Training the AI model and additional related tasks.
 
 * Website deployment
+
+
+## Challenges Encountered
+
+1. Encountered constraints in harvesting image data from ArtStation in adherence to robots.txt protocols.
+
+    **Solution** | Employed the Selenium framework to emulate authentic user interactions, thereby ensuring compliance while effectively extracting data.
+
 
 ## Project Roadmap
 
@@ -61,6 +69,9 @@ Consider using techniques like ensemble learning to potentially boost performanc
 ### Deployment
 Once satisfied with the model's performance, deploy it as a service or integrate it into your software.
 Keep in mind that real-world data can be different, so continuously monitor your model's performance.
+
+### Outreach and Engagement
+To enhance the project's visibility and impact, we will implement a targeted outreach and engagement strategy. Our focus will be on establishing connections with art schools, universities, and professional art platforms such as ArtStation and Pixiv. By showcasing the ArtifAI Detector at educational institutions and on renowned art platforms, we aim to educate and empower artists and creators in distinguishing between human-created and AI-generated art. This initiative will involve workshops, presentations, and collaborations that highlight the tool's utility in preserving the integrity of artistic creation. Through these efforts, we aspire to foster a community of informed users who value the authenticity and originality of human artistry.
 
 ### Continuous Learning
 If possible, set up a feedback loop where users can correct the model's predictions. This new data can be used to retrain and improve your model over time.
