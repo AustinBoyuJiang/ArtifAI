@@ -13,7 +13,7 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 **2023-10-31** | Executed proficient image retrieval from designated URLs and pioneered the implementation of a local JSON database for meticulous tracking and future utilization.
 
 
-## Ongoing Tasks:
+## Ongoing Tasks
 
 * Reformating the json file
 
