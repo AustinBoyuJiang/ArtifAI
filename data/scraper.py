@@ -3,74 +3,55 @@ import json
 import requests
 
 # scraper setting
-DOWNLOAD_DIR = "raw data\\created with ai"
-JSON_FILE = "raw data\\image urls.json"
+DATA_FILE = "data\\data.json"
 
-# initialization
-file_id = 0
-
-'''
-status.json:
-{
-  "created_with_ai": [
-    {
-      "id": "unique_id",
-      "img_url": "http://example.com/image.jpg",
-      "file_path": "/path/to/saved/image.jpg",
-      "processed": false,
-      "training_or_testing": "training"
-    },
-    // ... more objects
-  ],
-  "not_created_with_ai": [
-    // ... objects
-  ]
-  
-# Preprocess filename to generate id 
-}
-
-'''
+category = "created_with_ai"
+download_dir = "data\\raw\\created_with_ai"
 
 
-def download_images(data):
-    global file_id
-    if not os.path.exists(DOWNLOAD_DIR):
-        os.makedirs(DOWNLOAD_DIR)
-    file_paths = data.values()
-    for img_url in data:
-        if data[img_url]:
+def download(data):
+    for i, item in enumerate(data[category]):
+        if item["id"]:  # not repeated
             continue
-        img_name = str(file_id) + ".jpg"
-        file_path = os.path.join(DOWNLOAD_DIR, img_name)
-        while file_path in file_paths:
-            file_id += 1
-            img_name = str(file_id) + ".jpg"
-            file_path = os.path.join(DOWNLOAD_DIR, img_name)
-        response = requests.get(img_url)
+
+        # file path generation
+        data["data_id"] += 1
+        file_name = str(data["data_id"]) + ".jpg"
+        file_path = os.path.join(download_dir, file_name)
+
+        # download
+        response = requests.get(item["img_url"])
         with open(file_path, 'wb') as file:
             file.write(response.content)
-        data[img_url] = file_path
-        print(f"The image from the link '{img_url}' has been saved as a file at '{file_path}'.")
-    return data
+
+        # update
+        data[category][i]["id"] = data["data_id"]
+        data[category][i]["file_path"] = file_path
+
+        print(f"The image from the link '{item['img_url']}' has been saved as a file at '{file_path}'.")
+    write_json_file(data, DATA_FILE)
 
 
-def read_json_file():
-    if os.path.exists(JSON_FILE):
-        with open(JSON_FILE, 'r') as file:
+def read_json_file(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
             return json.load(file)
     return {}
 
 
-def write_json_file(data):
-    with open(JSON_FILE, 'w') as file:
-        json.dump(data, file, indent=4)
+def write_json_file(content, file_path):
+    with open(file_path, 'w') as file:
+        json.dump(content, file, indent=4)
 
 
-def main():
-    data = read_json_file()
-    new_data = download_images(data)
-    write_json_file(new_data)
+def download_imgs(cate, dir):
+    global category, download_dir
+    category = cate
+    download_dir = dir
+    data = read_json_file(DATA_FILE)
+    download(data)
 
 
 if __name__ == '__main__':
-    main()
+    data = read_json_file(DATA_FILE)
+    download_imgs(data)

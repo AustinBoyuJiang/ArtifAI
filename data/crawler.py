@@ -5,22 +5,26 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
 # crawler setting
-URL = "https://www.artstation.com/search?sort_by=relevance&category_ids_include=27&tags_include=CreatedWithAI"
-JSON_FILE = "raw data\\image urls.json"
+DATA_FILE = "data\\data.json"
+SOURCE_FILE = "data\\source.json"
+
+category = "created_with_ai"
 total_scrolls = 30  # number of images = total_scrolls * 10
 image_size = "smaller_square"  # smaller_square/small/medium/large
 
-# initialization
-current_scrolls = 0
-scroll_time = 3
-old_height = 0
-projects_list_xpath = '/html/body/div[2]/app-root/app-layout/search-artwork/div[5]/projects-list/div/projects-list-item'
 
-# Webdriver setting
-opt = webdriver.ChromeOptions()
-opt.add_argument("disable-extensions")
-driver = webdriver.Chrome(options=opt)
+def init():
+    global current_scrolls, scroll_time, old_height, projects_list_xpath, driver
+    # initialization
+    current_scrolls = 0
+    scroll_time = 3
+    old_height = 0
+    projects_list_xpath = '/html/body/div[2]/app-root/app-layout/search-artwork/div[5]/projects-list/div/projects-list-item'
 
+    # Webdriver setting
+    opt = webdriver.ChromeOptions()
+    opt.add_argument("disable-extensions")
+    driver = webdriver.Chrome(options=opt)
 
 def check_height():
     new_height = driver.execute_script("return document.body.scrollHeight")
@@ -54,31 +58,59 @@ def get_image_urls():
     return img_urls
 
 
-def read_json_file():
-    if os.path.exists(JSON_FILE):
-        with open(JSON_FILE, 'r') as file:
+def read_json_file(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
             return json.load(file)
     return {}
 
 
-def write_json_file(data):
-    with open(JSON_FILE, 'w') as file:
-        json.dump(data, file, indent=4)
+def write_json_file(content, file_path):
+    with open(file_path, 'w') as file:
+        json.dump(content, file, indent=4)
+
+
+def new_item(url):
+    return {
+        "id": None,
+        "img_url": url,
+        "file_path": None,
+        "processed": False,
+        "training": None
+    }
+
 
 def update_image_urls(img_urls, data):
+    vis = {}
+    for item in data[category]:
+        vis[item["img_url"]] = True
     for url in img_urls:
-        if url not in data:
-            data[url] = None
-    write_json_file(data)
+        if vis.get(url):
+            continue
+        data[category].append(new_item(url))
+        vis[url] = True
+    write_json_file(data, DATA_FILE)
 
 
-def main():
-    driver.get(URL)
-    data = read_json_file()
+def get_urls(cate, tot_scr, img_siz):
+    global category, total_scrolls, image_size, driver, opt
+    category = cate
+    total_scrolls = tot_scr
+    image_size = img_siz
+    init()
+    URL = read_json_file(SOURCE_FILE)
+    driver.get(URL[category])
+    data = read_json_file(DATA_FILE)
     img_urls = get_image_urls()
     update_image_urls(img_urls, data)
     driver.close()
 
 
 if __name__ == '__main__':
-    main()
+    init()
+    URL = read_json_file(SOURCE_FILE)
+    driver.get(URL[category])
+    data = read_json_file(DATA_FILE)
+    img_urls = get_image_urls()
+    update_image_urls(img_urls, data)
+    driver.close()

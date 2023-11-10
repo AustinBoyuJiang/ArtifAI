@@ -42,6 +42,7 @@ ipython_config.py
 *.log
 *.sql
 *.sqlite
+data.json
 
 # OS generated files
 .DS_Store
@@ -78,8 +79,8 @@ ENV/
 *.tlog
 
 # Data directories (you may want to version your dataset, but it's common to exclude it to avoid large files)
-raw data/
-proccessed data/
+raw/
+proccessed/
 
 # Model checkpoints and outputs
 src/models/checkpoints/
