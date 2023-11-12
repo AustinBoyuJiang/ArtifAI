@@ -6,8 +6,8 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 
 ## Development Log
 
-**2023-09-10***
-Project Inception.
+**2023-09-10**
+* Project Inception.
 
 **2023-09-18**
 * Achieved successful extraction of image URLs from ArtStation through advanced web crawling techniques.
