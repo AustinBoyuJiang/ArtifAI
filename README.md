@@ -50,6 +50,24 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
     **Solution** | Employed the Selenium framework to emulate authentic user interactions, thereby ensuring compliance while effectively extracting data.
 
 
+## Future Features
+分类置信度：除了简单的概率，您还可以提供关于模型对其预测置信度的额外信息，例如置信区间或置信度评分。
+
+解释性反馈：提供一些解释性反馈，说明为什么模型认为图像属于某个类别。这可以通过突出显示图像中对分类决策最有贡献的部分（例如，使用热力图）来实现。
+
+相似案例展示：显示与上传图像类似的、模型已分类的其他图像案例，这有助于用户理解模型的判断基准。
+
+建议和提示：如果模型无法高置信度地分类某图像，您可以提供一些建议或提示，例如建议上传更高质量或不同类型的图像。
+
+用户交互选项：提供一个选项，让用户对模型的分类结果提供反馈。这不仅可以帮助提升用户体验，还可以作为未来改进模型的宝贵数据来源。
+
+附加信息：如果可能的话，提供关于图像分类的额外信息，比如分类类别的简要描述，或者与类别相关的有趣事实。
+
+多种分类结果：在一些情况下，提供排名前几的分类结果可能会很有帮助，特别是当模型对于最高概率的分类不是非常有信心时。
+
+图像处理建议：如果适用，提供一些关于如何改善图像以获得更准确分类的建议（例如，改变光照条件、角度等）。
+
+
 ## Project Roadmap
 
 ### Data Collection
