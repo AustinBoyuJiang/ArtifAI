@@ -6,13 +6,28 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 
 ## Development Log
 
-**2023-09-10** | Project Inception.
+**2023-09-10***
+Project Inception.
 
-**2023-09-18** | Achieved successful extraction of image URLs from ArtStation through advanced web crawling techniques.
+**2023-09-18**
+* Achieved successful extraction of image URLs from ArtStation through advanced web crawling techniques.
 
-**2023-10-31** | Executed proficient image retrieval from designated URLs and pioneered the implementation of a local JSON database for meticulous tracking and future utilization.
+**2023-10-31**
+* Executed proficient image retrieval from designated URLs, ensuring efficient and accurate data acquisition.
 
-**2023-11-09** | Reformatted the JSON file and reorganized the entire structure of the data collection program.
+* Pioneered the implementation of a local JSON database, establishing a robust system for meticulous tracking and future utilization of collected data.
+
+**2023-11-09**
+* Undertook a comprehensive reformatting of the JSON file to enhance data structure and readability.
+
+* Executed a thorough reorganization of the data collection program, aiming for increased efficiency and user-friendliness.
+
+**2023-11-12** 
+* Standardized image sizes to 256x256 for optimal balance between detail retention and computational efficiency.
+
+* Established train_size or training_size as variable names for the training-to-testing data ratio.
+
+* Explored various image storage formats and decided on using the .npy format for its efficiency in machine learning operations.
 
 
 ## Ongoing Tasks

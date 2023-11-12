@@ -2,7 +2,7 @@ import os
 import json
 import shutil
 
-DATA_FILE = "data\\data.json"
+DATA_FILE = "data\\imageDataInfo.json"
 BASE_DIR = 'data'
 
 paths = [

@@ -1,0 +1,1407 @@
+{
+    "data_id": 199,
+    "created_with_ai": [
+        {
+            "id": 0,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/049/337/000/20220511053253/smaller_square/stijn-windig-summerland-01-small.jpg?1652265173",
+            "raw_data_path": "data\\raw\\created_with_ai\\0.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\0.npy",
+            "training": true
+        },
+        {
+            "id": 1,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/055/499/819/smaller_square/shenpei-wu-shenpei-wu-1.jpg?1667104222",
+            "raw_data_path": "data\\raw\\created_with_ai\\1.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\1.npy",
+            "training": true
+        },
+        {
+            "id": 2,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/049/819/360/smaller_square/stijn-windig-stijn-windig-thumb.jpg?1653402978",
+            "raw_data_path": "data\\raw\\created_with_ai\\2.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\2.npy",
+            "training": true
+        },
+        {
+            "id": 3,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/061/927/877/20230419160750/smaller_square/oliver-wetter-redhex-final-web.jpg?1681938470",
+            "raw_data_path": "data\\raw\\created_with_ai\\3.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\3.npy",
+            "training": false
+        },
+        {
+            "id": 4,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/061/864/632/smaller_square/angelina-stroganova-3.jpg?1681820151",
+            "raw_data_path": "data\\raw\\created_with_ai\\4.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\4.npy",
+            "training": true
+        },
+        {
+            "id": 5,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/551/567/smaller_square/ash-hellbender-01-12.jpg?1683402698",
+            "raw_data_path": "data\\raw\\created_with_ai\\5.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\5.npy",
+            "training": true
+        },
+        {
+            "id": 6,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/053/613/744/smaller_square/shenpei-wu-shenpei-wu-1-1.jpg?1662617695",
+            "raw_data_path": "data\\raw\\created_with_ai\\6.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\6.npy",
+            "training": true
+        },
+        {
+            "id": 7,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/068/049/302/smaller_square/sin-jong-hun-62-bluehole.jpg?1696873667",
+            "raw_data_path": "data\\raw\\created_with_ai\\7.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\7.npy",
+            "training": false
+        },
+        {
+            "id": 8,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/066/386/893/smaller_square/sin-jong-hun-ui.jpg?1692781859",
+            "raw_data_path": "data\\raw\\created_with_ai\\8.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\8.npy",
+            "training": true
+        },
+        {
+            "id": 9,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/019/349/smaller_square/ash-hellbender-06.jpg?1682159029",
+            "raw_data_path": "data\\raw\\created_with_ai\\9.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\9.npy",
+            "training": true
+        },
+        {
+            "id": 10,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/065/470/436/smaller_square/sin-jong-hun-12.jpg?1690442772",
+            "raw_data_path": "data\\raw\\created_with_ai\\10.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\10.npy",
+            "training": true
+        },
+        {
+            "id": 11,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/184/130/smaller_square/ash-hellbender-01-9.jpg?1682537870",
+            "raw_data_path": "data\\raw\\created_with_ai\\11.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\11.npy",
+            "training": true
+        },
+        {
+            "id": 12,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/064/497/869/20230629110906/smaller_square/ash-hellbender-001.jpg?1688054946",
+            "raw_data_path": "data\\raw\\created_with_ai\\12.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\12.npy",
+            "training": true
+        },
+        {
+            "id": 13,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/702/822/20230510145057/smaller_square/ash-hellbender-01.jpg?1683748257",
+            "raw_data_path": "data\\raw\\created_with_ai\\13.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\13.npy",
+            "training": true
+        },
+        {
+            "id": 14,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/063/866/652/20230612080222/smaller_square/ash-hellbender-01-6b.jpg?1686574942",
+            "raw_data_path": "data\\raw\\created_with_ai\\14.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\14.npy",
+            "training": false
+        },
+        {
+            "id": 15,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/049/376/012/20220512044831/smaller_square/stijn-windig-rasputin-small.jpg?1652348911",
+            "raw_data_path": "data\\raw\\created_with_ai\\15.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\15.npy",
+            "training": true
+        },
+        {
+            "id": 16,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/061/767/753/smaller_square/ash-hellbender-ash-hellbender-thumb.jpg?1681580505",
+            "raw_data_path": "data\\raw\\created_with_ai\\16.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\16.npy",
+            "training": true
+        },
+        {
+            "id": 17,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/063/607/977/20230605035258/smaller_square/kyoungmin-lee-midjourney-test-pretty-sorcerer-girlshort-skirteye-contactall-b-099ca73b-a58c-4df3-be2f-be02ec7c10b0.jpg?1685955178",
+            "raw_data_path": "data\\raw\\created_with_ai\\17.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\17.npy",
+            "training": true
+        },
+        {
+            "id": 18,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/061/923/588/smaller_square/ash-hellbender-ash-hellbender-thumb02.jpg?1681931533",
+            "raw_data_path": "data\\raw\\created_with_ai\\18.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\18.npy",
+            "training": false
+        },
+        {
+            "id": 19,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/063/364/320/smaller_square/angelina-stroganova-repair-01-copy.jpg?1685375614",
+            "raw_data_path": "data\\raw\\created_with_ai\\19.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\19.npy",
+            "training": false
+        },
+        {
+            "id": 20,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/104/607/smaller_square/ash-hellbender-portrait-01-16.jpg?1682367707",
+            "raw_data_path": "data\\raw\\created_with_ai\\20.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\20.npy",
+            "training": true
+        },
+        {
+            "id": 21,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/062/053/354/smaller_square/ash-hellbender-ash-hellbender-thumb.jpg?1682258633",
+            "raw_data_path": "data\\raw\\created_with_ai\\21.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\21.npy",
+            "training": true
+        },
+        {
+            "id": 22,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/053/888/282/smaller_square/stijn-windig-oceanview-02-small.jpg?1663253551",
+            "raw_data_path": "data\\raw\\created_with_ai\\22.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\22.npy",
+            "training": true
+        },
+        {
+            "id": 23,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/061/843/290/smaller_square/ash-hellbender-ash-hellbender-thumbnail.jpg?1681765592",
+            "raw_data_path": "data\\raw\\created_with_ai\\23.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\23.npy",
+            "training": false
+        },
+        {
+            "id": 24,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/255/938/smaller_square/ash-hellbender-01-22.jpg?1682693788",
+            "raw_data_path": "data\\raw\\created_with_ai\\24.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\24.npy",
+            "training": true
+        },
+        {
+            "id": 25,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/065/669/765/20230801173109/smaller_square/ash-hellbender-001-17.jpg?1690929070",
+            "raw_data_path": "data\\raw\\created_with_ai\\25.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\25.npy",
+            "training": true
+        },
+        {
+            "id": 26,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/976/878/20230712154515/smaller_square/ash-hellbender-001-18.jpg?1689194716",
+            "raw_data_path": "data\\raw\\created_with_ai\\26.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\26.npy",
+            "training": true
+        },
+        {
+            "id": 27,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/360/788/20230510151228/smaller_square/ash-hellbender-01-32.jpg?1683749549",
+            "raw_data_path": "data\\raw\\created_with_ai\\27.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\27.npy",
+            "training": true
+        },
+        {
+            "id": 28,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/008/654/smaller_square/ash-hellbender-01-4.jpg?1686867939",
+            "raw_data_path": "data\\raw\\created_with_ai\\28.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\28.npy",
+            "training": false
+        },
+        {
+            "id": 29,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/064/575/697/smaller_square/ash-hellbender-001-13.jpg?1688249225",
+            "raw_data_path": "data\\raw\\created_with_ai\\29.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\29.npy",
+            "training": true
+        },
+        {
+            "id": 30,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/066/135/208/smaller_square/ash-hellbender-ash-hellbender-001-21-thumb.jpg?1692128932",
+            "raw_data_path": "data\\raw\\created_with_ai\\30.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\30.npy",
+            "training": true
+        },
+        {
+            "id": 31,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/682/226/smaller_square/ash-hellbender-001-10.jpg?1688503687",
+            "raw_data_path": "data\\raw\\created_with_ai\\31.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\31.npy",
+            "training": true
+        },
+        {
+            "id": 32,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/065/568/311/20230811131800/smaller_square/ash-hellbender-001-13.jpg?1691777881",
+            "raw_data_path": "data\\raw\\created_with_ai\\32.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\32.npy",
+            "training": true
+        },
+        {
+            "id": 33,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/061/876/235/smaller_square/ash-hellbender-ash-hellbender-thumb.jpg?1681836783",
+            "raw_data_path": "data\\raw\\created_with_ai\\33.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\33.npy",
+            "training": true
+        },
+        {
+            "id": 34,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/105/528/smaller_square/ash-hellbender-portrait-01-8.jpg?1682369013",
+            "raw_data_path": "data\\raw\\created_with_ai\\34.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\34.npy",
+            "training": true
+        },
+        {
+            "id": 35,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/703/535/20230510151014/smaller_square/ash-hellbender-01-4.jpg?1683749414",
+            "raw_data_path": "data\\raw\\created_with_ai\\35.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\35.npy",
+            "training": true
+        },
+        {
+            "id": 36,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/066/157/318/smaller_square/ash-hellbender-001.jpg?1692191116",
+            "raw_data_path": "data\\raw\\created_with_ai\\36.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\36.npy",
+            "training": true
+        },
+        {
+            "id": 37,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/028/688/20230616085625/smaller_square/ash-hellbender-01-6.jpg?1686923786",
+            "raw_data_path": "data\\raw\\created_with_ai\\37.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\37.npy",
+            "training": true
+        },
+        {
+            "id": 38,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/062/005/874/smaller_square/ash-hellbender-ash-hellbender-thumb.jpg?1682110869",
+            "raw_data_path": "data\\raw\\created_with_ai\\38.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\38.npy",
+            "training": true
+        },
+        {
+            "id": 39,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/463/544/smaller_square/ash-hellbender-01-3.jpg?1683194399",
+            "raw_data_path": "data\\raw\\created_with_ai\\39.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\39.npy",
+            "training": false
+        },
+        {
+            "id": 40,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/704/433/20230510153821/smaller_square/ash-hellbender-01wef.jpg?1683751101",
+            "raw_data_path": "data\\raw\\created_with_ai\\40.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\40.npy",
+            "training": true
+        },
+        {
+            "id": 41,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/346/919/20230501054318/smaller_square/ash-hellbender-13.jpg?1682937798",
+            "raw_data_path": "data\\raw\\created_with_ai\\41.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\41.npy",
+            "training": true
+        },
+        {
+            "id": 42,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/063/835/709/20230722172738/smaller_square/ash-hellbender-01-10.jpg?1690064858",
+            "raw_data_path": "data\\raw\\created_with_ai\\42.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\42.npy",
+            "training": true
+        },
+        {
+            "id": 43,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/292/399/20230429113403/smaller_square/ash-hellbender-01-05.jpg?1682786044",
+            "raw_data_path": "data\\raw\\created_with_ai\\43.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\43.npy",
+            "training": true
+        },
+        {
+            "id": 44,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/084/900/20230424065127/smaller_square/ash-hellbender-portrait-01-12.jpg?1682337087",
+            "raw_data_path": "data\\raw\\created_with_ai\\44.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\44.npy",
+            "training": true
+        },
+        {
+            "id": 45,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/702/625/20230510144748/smaller_square/ash-hellbender-01-6.jpg?1683748068",
+            "raw_data_path": "data\\raw\\created_with_ai\\45.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\45.npy",
+            "training": true
+        },
+        {
+            "id": 46,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/063/834/822/20230630043812/smaller_square/ash-hellbender-01-2.jpg?1688117892",
+            "raw_data_path": "data\\raw\\created_with_ai\\46.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\46.npy",
+            "training": true
+        },
+        {
+            "id": 47,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/301/524/20230429175500/smaller_square/ash-hellbender-01-5.jpg?1682808900",
+            "raw_data_path": "data\\raw\\created_with_ai\\47.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\47.npy",
+            "training": true
+        },
+        {
+            "id": 48,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/063/835/545/20230611105437/smaller_square/ash-hellbender-01-9.jpg?1686498877",
+            "raw_data_path": "data\\raw\\created_with_ai\\48.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\48.npy",
+            "training": true
+        },
+        {
+            "id": 49,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/703/090/20230510145626/smaller_square/ash-hellbender-01-4.jpg?1683748586",
+            "raw_data_path": "data\\raw\\created_with_ai\\49.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\49.npy",
+            "training": true
+        },
+        {
+            "id": 50,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/064/576/479/smaller_square/ash-hellbender-001-2.jpg?1688251656",
+            "raw_data_path": "data\\raw\\created_with_ai\\50.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\50.npy",
+            "training": true
+        },
+        {
+            "id": 51,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/065/567/993/20230730054119/smaller_square/ash-hellbender-001-6.jpg?1690713680",
+            "raw_data_path": "data\\raw\\created_with_ai\\51.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\51.npy",
+            "training": true
+        },
+        {
+            "id": 52,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/434/164/20230504073058/smaller_square/simon-tosovsky-shot-04.jpg?1683203458",
+            "raw_data_path": "data\\raw\\created_with_ai\\52.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\52.npy",
+            "training": true
+        },
+        {
+            "id": 53,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/062/360/245/20230501121052/smaller_square/ash-hellbender-01-2.jpg?1682961052",
+            "raw_data_path": "data\\raw\\created_with_ai\\53.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\53.npy",
+            "training": true
+        },
+        {
+            "id": 54,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/068/929/141/smaller_square/sin-jong-hun-64-cloude-cotton-candy.jpg?1698944115",
+            "raw_data_path": "data\\raw\\created_with_ai\\54.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\54.npy",
+            "training": false
+        },
+        {
+            "id": 55,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/053/921/829/20220916073149/smaller_square/stijn-windig-oceanhouse-01-v06-small.jpg?1663331509",
+            "raw_data_path": "data\\raw\\created_with_ai\\55.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\55.npy",
+            "training": true
+        },
+        {
+            "id": 56,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/066/721/791/smaller_square/henryyann-henryyann-untitled-4.jpg?1693586828",
+            "raw_data_path": "data\\raw\\created_with_ai\\56.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\56.npy",
+            "training": true
+        },
+        {
+            "id": 57,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/062/703/428/20230705184626/smaller_square/ash-hellbender-02.jpg?1688600786",
+            "raw_data_path": "data\\raw\\created_with_ai\\57.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\57.npy",
+            "training": true
+        },
+        {
+            "id": 58,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/064/536/119/smaller_square/ash-hellbender-ash-hellbender-thumb.jpg?1688140638",
+            "raw_data_path": "data\\raw\\created_with_ai\\58.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\58.npy",
+            "training": true
+        },
+        {
+            "id": 59,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/068/427/638/smaller_square/sin-jong-hun-05.jpg?1697767615",
+            "raw_data_path": "data\\raw\\created_with_ai\\59.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\59.npy",
+            "training": false
+        },
+        {
+            "id": 60,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/065/506/920/20230728021727/smaller_square/ash-hellbender-001-11.jpg?1690528647",
+            "raw_data_path": "data\\raw\\created_with_ai\\60.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\60.npy",
+            "training": false
+        },
+        {
+            "id": 61,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/068/539/799/smaller_square/sin-jong-hun-63-work-space.jpg?1698076900",
+            "raw_data_path": "data\\raw\\created_with_ai\\61.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\61.npy",
+            "training": true
+        },
+        {
+            "id": 62,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/060/908/482/20230323084333/smaller_square/kaws-7777.jpg?1679579013",
+            "raw_data_path": "data\\raw\\created_with_ai\\62.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\62.npy",
+            "training": true
+        },
+        {
+            "id": 63,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/065/269/450/smaller_square/nikolai-gorishnii-nikolai-gorishnii-base-cube.jpg?1689937145",
+            "raw_data_path": "data\\raw\\created_with_ai\\63.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\63.npy",
+            "training": true
+        },
+        {
+            "id": 64,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/060/467/739/smaller_square/alex-nice-alex-nice-thumb.jpg?1678645638",
+            "raw_data_path": "data\\raw\\created_with_ai\\64.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\64.npy",
+            "training": true
+        },
+        {
+            "id": 65,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/060/860/198/smaller_square/kaws-02105-1194702174-steampunkai-1girl-a-steampunk-style-female-warrior-steampunk-style-armor-steampunk-style-gloves-steampunk-style-bo.jpg?1679478352",
+            "raw_data_path": "data\\raw\\created_with_ai\\65.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\65.npy",
+            "training": true
+        },
+        {
+            "id": 66,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/063/385/208/20230529231550/smaller_square/haoliang-yang-jcity-sunset02-copy-2.jpg?1685420150",
+            "raw_data_path": "data\\raw\\created_with_ai\\66.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\66.npy",
+            "training": true
+        },
+        {
+            "id": 67,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/060/469/069/smaller_square/alex-nice-alex-nice-thumbnailruins.jpg?1678647638",
+            "raw_data_path": "data\\raw\\created_with_ai\\67.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\67.npy",
+            "training": true
+        },
+        {
+            "id": 68,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/050/559/869/20220613133202/smaller_square/robert-wilinski-ef1b3d31-312e-4636-9e52-17b0f73ae5b3-ro311974-small-creek-in-the-bottom-of-the-canyon-calm-foggy-forest-autumn-michael-whelan-style-aspect-241.jpg?1655145122",
+            "raw_data_path": "data\\raw\\created_with_ai\\68.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\68.npy",
+            "training": true
+        },
+        {
+            "id": 69,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/066/314/353/smaller_square/nikolai-gorishnii-nikolai-gorishnii-base-cube.jpg?1692621288",
+            "raw_data_path": "data\\raw\\created_with_ai\\69.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\69.npy",
+            "training": false
+        },
+        {
+            "id": 70,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/857/583/20230323002313/smaller_square/kaws-02233-3888735900-the-female-elf-1girl-dressed-in-clothes-made-of-leaves-and-flowers-clothes-decorated-with-green-leaves-a-noble-elf-wit.jpg?1679548993",
+            "raw_data_path": "data\\raw\\created_with_ai\\70.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\70.npy",
+            "training": false
+        },
+        {
+            "id": 71,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/903/127/20230323054620/smaller_square/kaws-55.jpg?1679568380",
+            "raw_data_path": "data\\raw\\created_with_ai\\71.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\71.npy",
+            "training": true
+        },
+        {
+            "id": 72,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/100/526/smaller_square/mert-genccinar-nameless-soldier-1.jpg?1687129755",
+            "raw_data_path": "data\\raw\\created_with_ai\\72.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\72.npy",
+            "training": true
+        },
+        {
+            "id": 73,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/059/502/863/20230215231633/smaller_square/don-lawrence-soy6.jpg?1676524594",
+            "raw_data_path": "data\\raw\\created_with_ai\\73.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\73.npy",
+            "training": true
+        },
+        {
+            "id": 74,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/069/163/967/20231110131733/smaller_square/henryyann-deepspacefinal.jpg?1699643853",
+            "raw_data_path": "data\\raw\\created_with_ai\\74.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\74.npy",
+            "training": true
+        },
+        {
+            "id": 75,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/067/111/773/smaller_square/bnjacob-haruno-sakura-4.jpg?1694572686",
+            "raw_data_path": "data\\raw\\created_with_ai\\75.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\75.npy",
+            "training": true
+        },
+        {
+            "id": 76,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/936/435/20230324001730/smaller_square/kaws-999.jpg?1679635051",
+            "raw_data_path": "data\\raw\\created_with_ai\\76.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\76.npy",
+            "training": true
+        },
+        {
+            "id": 77,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/936/415/20230324001524/smaller_square/kaws-888.jpg?1679634924",
+            "raw_data_path": "data\\raw\\created_with_ai\\77.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\77.npy",
+            "training": true
+        },
+        {
+            "id": 78,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/526/827/20230314001203/smaller_square/don-lawrence-hr9.jpg?1678770724",
+            "raw_data_path": "data\\raw\\created_with_ai\\78.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\78.npy",
+            "training": true
+        },
+        {
+            "id": 79,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/908/301/20230323083702/smaller_square/kaws-3335.jpg?1679578623",
+            "raw_data_path": "data\\raw\\created_with_ai\\79.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\79.npy",
+            "training": true
+        },
+        {
+            "id": 80,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/060/895/962/20230323001946/smaller_square/kaws-3444.jpg?1679548786",
+            "raw_data_path": "data\\raw\\created_with_ai\\80.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\80.npy",
+            "training": true
+        },
+        {
+            "id": 81,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/060/895/478/smaller_square/kaws-444.jpg?1679546805",
+            "raw_data_path": "data\\raw\\created_with_ai\\81.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\81.npy",
+            "training": true
+        },
+        {
+            "id": 82,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/064/786/859/20230707085952/smaller_square/dmitry-karasev-splash-wizard1.jpg?1688738392",
+            "raw_data_path": "data\\raw\\created_with_ai\\82.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\82.npy",
+            "training": true
+        },
+        {
+            "id": 83,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/066/542/247/smaller_square/mert-genccinar-112.jpg?1693169958",
+            "raw_data_path": "data\\raw\\created_with_ai\\83.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\83.npy",
+            "training": false
+        },
+        {
+            "id": 84,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/065/408/314/smaller_square/bnjacob-adoptable-42-luminescent-ethereal.jpg?1690297821",
+            "raw_data_path": "data\\raw\\created_with_ai\\84.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\84.npy",
+            "training": true
+        },
+        {
+            "id": 85,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/526/774/20230630064201/smaller_square/bnjacob-enchanted-water.jpg?1688125321",
+            "raw_data_path": "data\\raw\\created_with_ai\\85.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\85.npy",
+            "training": true
+        },
+        {
+            "id": 86,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/060/859/918/20230323002146/smaller_square/kaws-02311-1231994827-the-female-elf-1girl-dressed-in-clothes-made-of-leaves-and-flowers-clothes-decorated-with-green-leaves-a-noble-elf-wit.jpg?1679548906",
+            "raw_data_path": "data\\raw\\created_with_ai\\86.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\86.npy",
+            "training": false
+        },
+        {
+            "id": 87,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/060/873/196/smaller_square/kaws-2.jpg?1679499416",
+            "raw_data_path": "data\\raw\\created_with_ai\\87.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\87.npy",
+            "training": true
+        },
+        {
+            "id": 88,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/060/863/949/smaller_square/kaws-1.jpg?1679484929",
+            "raw_data_path": "data\\raw\\created_with_ai\\88.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\88.npy",
+            "training": true
+        },
+        {
+            "id": 89,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/063/174/747/20230523211230/smaller_square/bnjacob-adoptable-8-ember-blazeheart.jpg?1684894350",
+            "raw_data_path": "data\\raw\\created_with_ai\\89.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\89.npy",
+            "training": false
+        },
+        {
+            "id": 90,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/165/976/smaller_square/bnjacob-relaxing-1.jpg?1687276012",
+            "raw_data_path": "data\\raw\\created_with_ai\\90.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\90.npy",
+            "training": true
+        },
+        {
+            "id": 91,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/069/037/292/smaller_square/mert-genccinar-cyborg.jpg?1699214325",
+            "raw_data_path": "data\\raw\\created_with_ai\\91.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\91.npy",
+            "training": true
+        },
+        {
+            "id": 92,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/067/375/758/20230920094231/smaller_square/stijn-windig-shroom-lady.jpg?1695220951",
+            "raw_data_path": "data\\raw\\created_with_ai\\92.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\92.npy",
+            "training": false
+        },
+        {
+            "id": 93,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/050/691/699/smaller_square/robert-wilinski-6efaa2b3-7ba4-4ea0-8fx-439a27f7dfca-ro311974-dark-megalopolis-foggy-rain-night-michael-whelan-style.jpg?1655448557",
+            "raw_data_path": "data\\raw\\created_with_ai\\93.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\93.npy",
+            "training": true
+        },
+        {
+            "id": 94,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/064/914/007/smaller_square/dominic-tt-dominik256-skeleton-riding-a-bike-9760b9df-279f-4d93-a9e8-2c2bc8f17924.jpg?1689067757",
+            "raw_data_path": "data\\raw\\created_with_ai\\94.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\94.npy",
+            "training": false
+        },
+        {
+            "id": 95,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/059/324/044/20230211103151/smaller_square/don-lawrence-eg4.jpg?1676133111",
+            "raw_data_path": "data\\raw\\created_with_ai\\95.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\95.npy",
+            "training": true
+        },
+        {
+            "id": 96,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/059/324/807/20230211105623/smaller_square/don-lawrence-eg6.jpg?1676134583",
+            "raw_data_path": "data\\raw\\created_with_ai\\96.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\96.npy",
+            "training": false
+        },
+        {
+            "id": 97,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/625/988/smaller_square/mert-genccinar-gollum.jpg?1688391228",
+            "raw_data_path": "data\\raw\\created_with_ai\\97.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\97.npy",
+            "training": true
+        },
+        {
+            "id": 98,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/065/174/797/smaller_square/dominic-tt-dominik256-excellent-fairy-queen-in-the-wood-neon-noir-illustra-afd0dd03-35cf-461c-a5b1-4388952a9181.jpg?1689704768",
+            "raw_data_path": "data\\raw\\created_with_ai\\98.jpg",
+            "processed_data_path": "data\\processed\\training\\created_with_ai\\98.npy",
+            "training": true
+        },
+        {
+            "id": 99,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/064/064/974/smaller_square/dominic-tt-dominik256-evil-happy-anime-girl-shooting-gun-in-chaotic-battle-3746b926-e2c1-40db-a83d-89cee6b46558.jpg?1687020924",
+            "raw_data_path": "data\\raw\\created_with_ai\\99.jpg",
+            "processed_data_path": "data\\processed\\testing\\created_with_ai\\99.npy",
+            "training": false
+        }
+    ],
+    "not_created_with_ai": [
+        {
+            "id": 100,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/011/847/601/20180716090257/smaller_square/jessica-oyhenart-akali-splash-final-lg.jpg?1531749777",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\100.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\100.npy",
+            "training": true
+        },
+        {
+            "id": 101,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/016/931/365/20190331070808/smaller_square/siwoo-kim-breaktime.jpg?1554034089",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\101.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\101.npy",
+            "training": true
+        },
+        {
+            "id": 102,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/032/632/951/20201203091635/smaller_square/lou-ll-maid-58-small.jpg?1607008595",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\102.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\102.npy",
+            "training": true
+        },
+        {
+            "id": 103,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/008/416/274/20171206203911/smaller_square/chengwei-pan-final-projectvayne-splash-psd.jpg?1512614353",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\103.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\103.npy",
+            "training": true
+        },
+        {
+            "id": 104,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/019/800/404/20190806003338/smaller_square/christophe-young-23a.jpg?1565069619",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\104.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\104.npy",
+            "training": true
+        },
+        {
+            "id": 105,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/012/460/512/20180821230029/smaller_square/eddie-mendoza-biker-girl.jpg?1534910429",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\105.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\105.npy",
+            "training": false
+        },
+        {
+            "id": 106,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/011/952/091/20180722121513/smaller_square/julen-urrutia-geraltface.jpg?1532279713",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\106.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\106.npy",
+            "training": true
+        },
+        {
+            "id": 107,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/020/953/571/20190930023143/smaller_square/hou-china-3.jpg?1569828703",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\107.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\107.npy",
+            "training": true
+        },
+        {
+            "id": 108,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/034/154/062/20210125015143/smaller_square/chengwei-pan-1.jpg?1611561103",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\108.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\108.npy",
+            "training": true
+        },
+        {
+            "id": 109,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/025/861/308/smaller_square/dao-le-trong-a.jpg?1587151413",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\109.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\109.npy",
+            "training": true
+        },
+        {
+            "id": 110,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/065/769/281/smaller_square/igor-sid-igor-sid-31.jpg?1691164143",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\110.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\110.npy",
+            "training": true
+        },
+        {
+            "id": 111,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/020/706/302/20190918161029/smaller_square/lorenzo-lanfranconi-ex-22-f.jpg?1568841029",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\111.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\111.npy",
+            "training": true
+        },
+        {
+            "id": 112,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/017/071/269/20190405202434/smaller_square/hou-china-8.jpg?1554513875",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\112.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\112.npy",
+            "training": true
+        },
+        {
+            "id": 113,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/003/394/110/20160907032544/smaller_square/chengwei-pan-10.jpg?1473236745",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\113.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\113.npy",
+            "training": false
+        },
+        {
+            "id": 114,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/029/928/571/smaller_square/kan-liu-666k-whatsupicon.jpg?1599061929",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\114.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\114.npy",
+            "training": true
+        },
+        {
+            "id": 115,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/006/322/107/20170617051240/smaller_square/chengwei-pan-dawnbringer-riven-splash-final.jpg?1497694361",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\115.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\115.npy",
+            "training": false
+        },
+        {
+            "id": 116,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/024/665/539/smaller_square/quentin-mabille-crop2.jpg?1583155371",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\116.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\116.npy",
+            "training": true
+        },
+        {
+            "id": 117,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/018/196/500/20190522234048/smaller_square/kleiner-hai-36b.jpg?1558586448",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\117.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\117.npy",
+            "training": true
+        },
+        {
+            "id": 118,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/017/404/889/smaller_square/shin-jong-hun-6.jpg?1555861119",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\118.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\118.npy",
+            "training": false
+        },
+        {
+            "id": 119,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/008/221/338/20171121110013/smaller_square/nabetse-zitro-v-n.jpg?1511283613",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\119.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\119.npy",
+            "training": true
+        },
+        {
+            "id": 120,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/029/025/561/smaller_square/robin-tran-robin-tran-thumbnail2.jpg?1596219793",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\120.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\120.npy",
+            "training": true
+        },
+        {
+            "id": 121,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/004/689/218/20170127104433/smaller_square/siwoo-kim-sdfsdf.jpg?1485535474",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\121.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\121.npy",
+            "training": true
+        },
+        {
+            "id": 122,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/017/867/548/smaller_square/julen-urrutia-portada.jpg?1557657945",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\122.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\122.npy",
+            "training": true
+        },
+        {
+            "id": 123,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/017/166/223/20190410060830/smaller_square/lorenzo-lanfranconi-ex-11-insta-1.jpg?1554894510",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\123.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\123.npy",
+            "training": true
+        },
+        {
+            "id": 124,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/016/829/545/20190326145143/smaller_square/ignatius-tan-mononoke-portrait-final-as.jpg?1553629903",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\124.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\124.npy",
+            "training": true
+        },
+        {
+            "id": 125,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/039/274/003/20210704204813/smaller_square/tea-me-4557397785dcdc0-mh1625413184495-1.jpg?1625449693",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\125.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\125.npy",
+            "training": true
+        },
+        {
+            "id": 126,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/017/072/500/smaller_square/shin-jong-hun-00.jpg?1554522291",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\126.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\126.npy",
+            "training": true
+        },
+        {
+            "id": 127,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/053/540/563/20220906062718/smaller_square/qiu-fang-omakase.jpg?1662463638",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\127.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\127.npy",
+            "training": false
+        },
+        {
+            "id": 128,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/054/121/228/smaller_square/chengwei-pan-1.jpg?1663797552",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\128.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\128.npy",
+            "training": true
+        },
+        {
+            "id": 129,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/050/273/697/smaller_square/qifeng-lin-qifeng-lin-2.jpg?1654483878",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\129.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\129.npy",
+            "training": true
+        },
+        {
+            "id": 130,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/012/993/940/20180921072617/smaller_square/siwoo-kim-untitled-3.jpg?1537532777",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\130.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\130.npy",
+            "training": false
+        },
+        {
+            "id": 131,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/013/951/556/20181109134229/smaller_square/eddie-mendoza-the-meditation-garden.jpg?1541792549",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\131.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\131.npy",
+            "training": true
+        },
+        {
+            "id": 132,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/014/696/420/20181217111403/smaller_square/siwoo-kim-4.jpg?1545066843",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\132.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\132.npy",
+            "training": true
+        },
+        {
+            "id": 133,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/026/052/231/20200424085512/smaller_square/bayard-wu-human.jpg?1587736512",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\133.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\133.npy",
+            "training": true
+        },
+        {
+            "id": 134,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/024/440/904/20200222231016/smaller_square/yuhong-ding-nov-16th-2019-3.jpg?1582434616",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\134.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\134.npy",
+            "training": true
+        },
+        {
+            "id": 135,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/004/524/130/20170113012105/smaller_square/lorenzo-lanfranconi-6.jpg?1484292066",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\135.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\135.npy",
+            "training": true
+        },
+        {
+            "id": 136,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/010/044/980/smaller_square/kan-liu-666k-icon.jpg?1522255956",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\136.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\136.npy",
+            "training": true
+        },
+        {
+            "id": 137,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/036/005/479/20210323043729/smaller_square/lou-ll-88607719-p0.jpg?1616492250",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\137.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\137.npy",
+            "training": true
+        },
+        {
+            "id": 138,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/033/637/968/20210114024052/smaller_square/chengwei-pan-1.jpg?1610613653",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\138.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\138.npy",
+            "training": true
+        },
+        {
+            "id": 139,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/047/068/742/20220307141234/smaller_square/chengwei-pan-1.jpg?1646683954",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\139.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\139.npy",
+            "training": false
+        },
+        {
+            "id": 140,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/022/259/718/smaller_square/shin-jong-hun-.jpg?1574733051",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\140.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\140.npy",
+            "training": true
+        },
+        {
+            "id": 141,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/020/478/972/smaller_square/vladimir-motsar-1.jpg?1567946180",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\141.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\141.npy",
+            "training": true
+        },
+        {
+            "id": 142,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/024/820/447/20200307232915/smaller_square/suke-valorant-phx-jett-brand.jpg?1583645355",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\142.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\142.npy",
+            "training": true
+        },
+        {
+            "id": 143,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/004/115/919/20161130021236/smaller_square/suke-light.jpg?1480493557",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\143.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\143.npy",
+            "training": true
+        },
+        {
+            "id": 144,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/005/668/894/smaller_square/greg-rutkowski-the-last-one-1920-2.jpg?1492869131",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\144.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\144.npy",
+            "training": true
+        },
+        {
+            "id": 145,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/054/268/464/20220925224926/smaller_square/hou-china-13.jpg?1664164167",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\145.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\145.npy",
+            "training": true
+        },
+        {
+            "id": 146,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/065/769/405/smaller_square/igor-sid-igor-sid-33.jpg?1691164435",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\146.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\146.npy",
+            "training": false
+        },
+        {
+            "id": 147,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/024/885/474/20200310104637/smaller_square/hou-china-5.jpg?1583855197",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\147.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\147.npy",
+            "training": true
+        },
+        {
+            "id": 148,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/007/027/571/20170819062632/smaller_square/greg-rutkowski-dragon-cave-1920.jpg?1503141992",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\148.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\148.npy",
+            "training": false
+        },
+        {
+            "id": 149,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/042/522/921/20211020090050/smaller_square/dao-trong-le-dephanie.jpg?1634738450",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\149.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\149.npy",
+            "training": true
+        },
+        {
+            "id": 150,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/041/278/820/20210909234911/smaller_square/chengwei-pan-1.jpg?1631249351",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\150.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\150.npy",
+            "training": true
+        },
+        {
+            "id": 151,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/016/392/540/20190307120712/smaller_square/astor-alexander-geralt-2100px.jpg?1551982033",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\151.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\151.npy",
+            "training": true
+        },
+        {
+            "id": 152,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/006/955/616/20170812085219/smaller_square/amir-zand-lonelyrock2.jpg?1502545939",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\152.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\152.npy",
+            "training": true
+        },
+        {
+            "id": 153,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/014/403/413/20181203085349/smaller_square/greg-rutkowski-castle-defence-1920.jpg?1543848830",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\153.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\153.npy",
+            "training": true
+        },
+        {
+            "id": 154,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/042/088/225/20211006114918/smaller_square/christophe-young-coverillustration-wip4.jpg?1633538958",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\154.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\154.npy",
+            "training": false
+        },
+        {
+            "id": 155,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/028/948/401/20200729015627/smaller_square/chengwei-pan-1.jpg?1596005787",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\155.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\155.npy",
+            "training": true
+        },
+        {
+            "id": 156,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/043/174/350/20211109221347/smaller_square/ruan-jia-.jpg?1636517627",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\156.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\156.npy",
+            "training": false
+        },
+        {
+            "id": 157,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/017/816/621/20190509151549/smaller_square/suke-lol-promoart-14.jpg?1557432950",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\157.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\157.npy",
+            "training": true
+        },
+        {
+            "id": 158,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/058/152/348/smaller_square/hou-china-hou-china-1222322323.jpg?1673501513",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\158.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\158.npy",
+            "training": true
+        },
+        {
+            "id": 159,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/014/311/347/20181211035645/smaller_square/suke-leona-1.jpg?1544522205",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\159.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\159.npy",
+            "training": true
+        },
+        {
+            "id": 160,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/045/336/111/20220118014127/smaller_square/lorenzo-lanfranconi-painting-san-donato-3.jpg?1642491687",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\160.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\160.npy",
+            "training": true
+        },
+        {
+            "id": 161,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/009/905/085/20180319211228/smaller_square/jessica-oyhenart-ireliawip-15.jpg?1521511949",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\161.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\161.npy",
+            "training": true
+        },
+        {
+            "id": 162,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/010/866/582/20180518045713/smaller_square/greg-rutkowski-slinn-voda-the-rising-deep-1500.jpg?1526637433",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\162.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\162.npy",
+            "training": true
+        },
+        {
+            "id": 163,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/013/733/765/smaller_square/naranbaatar-ganbold-asar-portrait.jpg?1540905128",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\163.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\163.npy",
+            "training": true
+        },
+        {
+            "id": 164,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/016/549/966/20190314083200/smaller_square/hou-china-6.jpg?1552570320",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\164.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\164.npy",
+            "training": true
+        },
+        {
+            "id": 165,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/036/171/824/20210328064233/smaller_square/lorenzo-lanfranconi-painting-san-donato-2-e-copia.jpg?1616931754",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\165.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\165.npy",
+            "training": false
+        },
+        {
+            "id": 166,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/034/289/408/20210129010828/smaller_square/christophe-young-13-1920sharpenned.jpg?1611904108",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\166.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\166.npy",
+            "training": true
+        },
+        {
+            "id": 167,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/037/637/029/20210514234134/smaller_square/dao-trong-le-dao-trong-le-twilight.jpg?1621053695",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\167.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\167.npy",
+            "training": true
+        },
+        {
+            "id": 168,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/031/557/450/20201029015520/smaller_square/eddie-mendoza-the-puppeteers-village.jpg?1603954520",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\168.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\168.npy",
+            "training": true
+        },
+        {
+            "id": 169,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/019/560/909/20190725020345/smaller_square/tooth-wu-bodezhimenf.jpg?1564038225",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\169.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\169.npy",
+            "training": true
+        },
+        {
+            "id": 170,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/011/397/149/20180619010948/smaller_square/eddie-mendoza-deepwood.jpg?1529388589",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\170.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\170.npy",
+            "training": true
+        },
+        {
+            "id": 171,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/039/504/824/20210712120532/smaller_square/jx-saber-ruins1.jpg?1626109533",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\171.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\171.npy",
+            "training": false
+        },
+        {
+            "id": 172,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/007/586/952/smaller_square/greg-rutkowski-church-scene-2-1920.jpg?1507143836",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\172.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\172.npy",
+            "training": false
+        },
+        {
+            "id": 173,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/048/472/444/smaller_square/suke-suke-dan6.jpg?1650127697",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\173.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\173.npy",
+            "training": true
+        },
+        {
+            "id": 174,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/039/348/336/20210707034411/smaller_square/hou-china-12.jpg?1625647451",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\174.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\174.npy",
+            "training": true
+        },
+        {
+            "id": 175,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/006/071/805/20170526130356/smaller_square/greg-rutkowski-secret-pass-eagle-nest-1920.jpg?1495821836",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\175.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\175.npy",
+            "training": true
+        },
+        {
+            "id": 176,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/014/649/686/smaller_square/adrian-wilkins-spiderman-into-the-spiderverse-final-by-adrian-wilkins.jpg?1544838894",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\176.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\176.npy",
+            "training": true
+        },
+        {
+            "id": 177,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/044/043/490/20211208003309/smaller_square/chengwei-pan-1.jpg?1638945190",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\177.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\177.npy",
+            "training": true
+        },
+        {
+            "id": 178,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/008/841/567/20180110174818/smaller_square/jessica-oyhenart-cowgirl-mf-inhouse05.jpg?1515628099",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\178.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\178.npy",
+            "training": false
+        },
+        {
+            "id": 179,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/014/715/923/smaller_square/adrian-wilkins-spidergwen-by-adrian-wilkins.jpg?1545148724",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\179.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\179.npy",
+            "training": true
+        },
+        {
+            "id": 180,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/030/962/096/smaller_square/kan-liu-666k-kan-liu-666k-as-icon.jpg?1602168658",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\180.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\180.npy",
+            "training": true
+        },
+        {
+            "id": 181,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/040/230/710/20210806031053/smaller_square/anato-finnstark-web-petit.jpg?1628237453",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\181.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\181.npy",
+            "training": true
+        },
+        {
+            "id": 182,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/050/711/254/20220618235527/smaller_square/suke-suke-ep5-key-art-final-5-15.jpg?1655614527",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\182.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\182.npy",
+            "training": false
+        },
+        {
+            "id": 183,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/014/591/729/20181212063711/smaller_square/sergey-vasnev-fallen-ship.jpg?1544618232",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\183.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\183.npy",
+            "training": false
+        },
+        {
+            "id": 184,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/025/414/465/20200401004538/smaller_square/suke-val-closed-beta-final.jpg?1585719939",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\184.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\184.npy",
+            "training": true
+        },
+        {
+            "id": 185,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/022/577/506/20191209231721/smaller_square/eddie-mendoza-canal-town.jpg?1575955042",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\185.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\185.npy",
+            "training": true
+        },
+        {
+            "id": 186,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/005/261/230/20170316171523/smaller_square/ignatius-tan-motoko-merged-final.jpg?1489702523",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\186.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\186.npy",
+            "training": true
+        },
+        {
+            "id": 187,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/019/426/197/20190718073958/smaller_square/christophe-young-20b.jpg?1563453600",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\187.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\187.npy",
+            "training": false
+        },
+        {
+            "id": 188,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/012/994/148/20180921073801/smaller_square/siwoo-kim-2018-mermaid.jpg?1537533481",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\188.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\188.npy",
+            "training": false
+        },
+        {
+            "id": 189,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/050/217/395/smaller_square/tea-me-41d91b436b244cf6d2a7b17f8e1c63f6.jpg?1654331236",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\189.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\189.npy",
+            "training": true
+        },
+        {
+            "id": 190,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/020/098/094/20190820210909/smaller_square/tomek-pietrzyk-imp-bike-tomek-pietrzyk-3.jpg?1566353349",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\190.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\190.npy",
+            "training": true
+        },
+        {
+            "id": 191,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/019/871/468/smaller_square/naranbaatar-ganbold-eliza-small.jpg?1565355771",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\191.jpg",
+            "processed_data_path": "data\\processed\\testing\\not_created_with_ai\\191.npy",
+            "training": false
+        },
+        {
+            "id": 192,
+            "img_url": "https://cdnb.artstation.com/p/assets/covers/images/025/461/651/smaller_square/lorenzo-lanfranconi-art.jpg?1585859613",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\192.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\192.npy",
+            "training": true
+        },
+        {
+            "id": 193,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/027/133/330/20200528111051/smaller_square/kan-liu-666k-engineerf.jpg?1590682252",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\193.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\193.npy",
+            "training": true
+        },
+        {
+            "id": 194,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/049/735/401/20220522043416/smaller_square/chengwei-pan-1.jpg?1653212057",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\194.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\194.npy",
+            "training": true
+        },
+        {
+            "id": 195,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/017/628/491/20190501153312/smaller_square/greg-rutkowski-ghosts-of-saltmarsh-1920.jpg?1556742792",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\195.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\195.npy",
+            "training": true
+        },
+        {
+            "id": 196,
+            "img_url": "https://cdnb.artstation.com/p/assets/images/images/026/043/205/20200424020149/smaller_square/suke-gold20-omn-omen-golden-moment-thumbnail-1.jpg?1587711710",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\196.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\196.npy",
+            "training": true
+        },
+        {
+            "id": 197,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/021/980/436/smaller_square/hicham-habchi-artstation-concept-2.jpg?1573662629",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\197.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\197.npy",
+            "training": true
+        },
+        {
+            "id": 198,
+            "img_url": "https://cdna.artstation.com/p/assets/covers/images/015/788/368/smaller_square/tim-razumovsky-aewee.jpg?1549640359",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\198.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\198.npy",
+            "training": true
+        },
+        {
+            "id": 199,
+            "img_url": "https://cdna.artstation.com/p/assets/images/images/018/773/854/smaller_square/shin-jong-hun-asdasf.jpg?1560684630",
+            "raw_data_path": "data\\raw\\not_created_with_ai\\199.jpg",
+            "processed_data_path": "data\\processed\\training\\not_created_with_ai\\199.npy",
+            "training": true
+        }
+    ]
+}

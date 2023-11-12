@@ -5,8 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
 # crawler setting
-DATA_FILE = "data\\data.json"
-SOURCE_FILE = "data\\source.json"
+DATA_FILE = "data\\imageDataInfo.json"
+SOURCE_FILE = "data\\imageDataSource.json"
 
 category = "created_with_ai"
 total_scrolls = 30  # number of images = total_scrolls * 10
@@ -70,12 +70,12 @@ def write_json_file(content, file_path):
         json.dump(content, file, indent=4)
 
 
-def new_item(url):
+def new_img(url):
     return {
         "id": None,
         "img_url": url,
-        "file_path": None,
-        "processed": False,
+        "raw_data_path": None,
+        "processed_data_path": None,
         "training": None
     }
 
@@ -87,16 +87,17 @@ def update_image_urls(img_urls, data):
     for url in img_urls:
         if vis.get(url):
             continue
-        data[category].append(new_item(url))
+        data[category].append(new_img(url))
         vis[url] = True
     write_json_file(data, DATA_FILE)
 
 
-def get_urls(cate, tot_scr, img_siz):
+def get_urls(tp, tot_scr, img_siz):
     global category, total_scrolls, image_size, driver, opt
-    category = cate
+    category = tp
     total_scrolls = tot_scr
     image_size = img_siz
+
     init()
     URL = read_json_file(SOURCE_FILE)
     driver.get(URL[category])
@@ -105,12 +106,6 @@ def get_urls(cate, tot_scr, img_siz):
     update_image_urls(img_urls, data)
     driver.close()
 
-
-if __name__ == '__main__':
-    init()
-    URL = read_json_file(SOURCE_FILE)
-    driver.get(URL[category])
-    data = read_json_file(DATA_FILE)
-    img_urls = get_image_urls()
-    update_image_urls(img_urls, data)
-    driver.close()
+#
+# if __name__ == '__main__':
+#     get_urls(category, total_scrolls, image_size)

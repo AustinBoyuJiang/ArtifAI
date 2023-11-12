@@ -8,6 +8,7 @@ import processor
 # setting
 CONFIG_FILE = "config.json"
 
+
 def read_json_file(file_path):
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:
@@ -25,10 +26,16 @@ def collect_data(category):
 
     total_scrolls = config[category]["total_scrolls"]
     image_size = config["image_size"]
-    download_dir = config[category]["download_dir"]
+    raw_data_dir = config[category]["raw_data_dir"]
+    processed_training_data_dir = config[category]["processed_training_data_dir"]
+    processed_testing_data_dir = config[category]["processed_testing_data_dir"]
 
     crawler.get_urls(category, total_scrolls, image_size)
-    scraper.download_imgs(category, download_dir)
+    scraper.download_imgs(category, raw_data_dir)
+    processor.process_imgs(category,
+                           config["train_test_ratio"],
+                           processed_training_data_dir,
+                           processed_testing_data_dir)
 
 
 if __name__ == '__main__':
