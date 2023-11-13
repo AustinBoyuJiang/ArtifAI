@@ -27,13 +27,19 @@ def collect_data(category):
     total_scrolls = config[category]["total_scrolls"]
     image_size = config["image_size"]
     raw_data_dir = config[category]["raw_data_dir"]
-    processed_training_data_dir = config[category]["processed_training_data_dir"]
-    processed_testing_data_dir = config[category]["processed_testing_data_dir"]
 
     crawler.get_urls(category, total_scrolls, image_size)
     scraper.download_imgs(category, raw_data_dir)
+
+
+def process_data(category):
+    print(f"Commencing data processing for the \"{category}\" category.")
+
+    processed_training_data_dir = config[category]["processed_training_data_dir"]
+    processed_testing_data_dir = config[category]["processed_testing_data_dir"]
     processor.process_imgs(category,
-                           config["train_test_ratio"],
+                           config["test_size"],
+                           config["random_state"],
                            processed_training_data_dir,
                            processed_testing_data_dir)
 
@@ -46,4 +52,6 @@ if __name__ == '__main__':
         write_json_file(config, CONFIG_FILE)
     collect_data("created_with_ai")
     collect_data("not_created_with_ai")
+    process_data("created_with_ai")
+    process_data("not_created_with_ai")
     print("Data collection process has been successfully completed.")

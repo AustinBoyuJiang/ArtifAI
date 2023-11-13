@@ -86,6 +86,8 @@ processed/
 # Model checkpoints and outputs
 src/models/checkpoints/
 output/
+src/models/
+
 
 # Temporary and cache files/folders that might be generated during runs or by the OS
 *.tmp

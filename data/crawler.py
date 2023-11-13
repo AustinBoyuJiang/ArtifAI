@@ -51,10 +51,13 @@ def get_image_urls():
     scroll()
     links = driver.find_elements(By.XPATH, projects_list_xpath)
     img_urls = []
+    tot = len(links)
+    i = 0
     for link in links:
         url = replace_image_size(link.find_elements(By.TAG_NAME, 'img')[1].get_attribute('src'), image_size)
         img_urls.append(url)
-        print(f"Successfully crawled the image link: {url}")
+        print(f"({i+1}/{tot}) Successfully crawled the image link: {url}")
+        i += 1
     return img_urls
 
 

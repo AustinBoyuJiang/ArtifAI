@@ -29,18 +29,28 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 
 * Explored various image storage formats and decided on using the .npy format for its efficiency in machine learning operations.
 
+* Initiated the development of the training program for the AI image classification project, targeting efficient data handling and model training strategies.
+
+* Implemented a data batch loading mechanism to manage large image datasets effectively, overcoming the limitations of computer memory capacity.
+
+* Revised the Python training program to incorporate dynamic data loading, significantly reducing memory usage during model training.
+
+* Enhanced the data loading function to ensure consistency across images, including converting grayscale images to a uniform three-channel RGB format.
+
+* Implemented functionality for saving the trained model to a local file, facilitating model preservation and future usage.
+
+* Accomplished the first training of the AI model using a dataset of more than 6000 images, yielding an accuracy of 71.23% on the testing set. This promising result highlights the model's capability in differentiating between AI-generated and human-created images. However, there is a potential concern regarding overfitting, which will be a focus for further investigation and model optimization in subsequent development phases.
+
 
 ## Ongoing Tasks
 
-* Developing the code for data processing (randomly category them to either training or testing data set).
+* Compressing and optimizing data size.
 
-* Finalizing the main control file to categorize downloaded images as either 'created with AI' or 'not created with AI'.
+* Investigating and addressing the potential overfitting issue in the AI model to improve its generalization capabilities. This includes experimenting with model architecture adjustments, regularization techniques, and data augmentation strategies.
 
-* Partitioning the data into two sets: one for training and the other for testing.
+* Training the AI model and executing additional related tasks.
 
-* Training the AI model and additional related tasks.
-
-* Website deployment
+* Deploying the website.
 
 
 ## Challenges Encountered
@@ -48,6 +58,16 @@ The ArtifAI Detector is the first installment in the "AI Drawing Insights" serie
 1. Encountered constraints in harvesting image data from ArtStation in adherence to robots.txt protocols.
 
     **Solution** | Employed the Selenium framework to emulate authentic user interactions, thereby ensuring compliance while effectively extracting data.
+
+2. Faced issues with inconsistent shapes of image data, leading to errors during the model training process.
+
+    **Solution** | Standardized all images to have a uniform shape of (256,256,3). This involved converting grayscale images into three-channel RGB format, ensuring consistency across the dataset and smooth model training.
+
+3. Exceeded memory limits during data processing and model training.
+
+    **Solution** | Addressed this issue by implementing data batch loading and reducing batch sizes, thereby optimizing memory usage and ensuring efficient processing.
+
+4. Successfully trained the AI model on a dataset of over 6000 images, but observed a potential overfitting issue, as indicated by a 71.23% accuracy rate on the testing set. This suggests a need for careful evaluation and refinement of the model to ensure it generalizes well to unseen data.
 
 
 ## Future Features

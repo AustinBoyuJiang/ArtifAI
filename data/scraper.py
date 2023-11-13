@@ -10,6 +10,8 @@ raw_data_dir = "data\\raw\\created_with_ai"
 
 
 def download(data):
+    tot = len(data[category])
+
     for i, img in enumerate(data[category]):
         if img["id"]:  # not repeated
             continue
@@ -28,7 +30,7 @@ def download(data):
         data[category][i]["id"] = data["data_id"]
         data[category][i]["raw_data_path"] = file_path
 
-        print(f"The image from the link '{img['img_url']}' has been saved as a file at '{file_path}'.")
+        print(f"({i+1}/{tot}) The image from the link '{img['img_url']}' has been saved as a file at '{file_path}'.")
     write_json_file(data, DATA_FILE)
 
 
