@@ -51,7 +51,7 @@ if __name__ == '__main__':
         config["clear"] = False
         write_json_file(config, CONFIG_FILE)
     collect_data("created_with_ai")
-    collect_data("not_created_with_ai")
+    # collect_data("not_created_with_ai")
     process_data("created_with_ai")
-    process_data("not_created_with_ai")
+    # process_data("not_created_with_ai")
     print("Data collection process has been successfully completed.")

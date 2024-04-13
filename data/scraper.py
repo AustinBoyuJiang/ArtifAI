@@ -22,15 +22,18 @@ def download(data):
         file_path = os.path.join(raw_data_dir, file_name)
 
         # download
-        response = requests.get(img["img_url"])
-        with open(file_path, 'wb') as file:
-            file.write(response.content)
+        try:
+            response = requests.get(img["img_url"])
+            with open(file_path, 'wb') as file:
+                file.write(response.content)
 
-        # update
-        data[category][i]["id"] = data["data_id"]
-        data[category][i]["raw_data_path"] = file_path
+            # update
+            data[category][i]["id"] = data["data_id"]
+            data[category][i]["raw_data_path"] = file_path
 
-        print(f"({i+1}/{tot}) The image from the link '{img['img_url']}' has been saved as a file at '{file_path}'.")
+            print(f"({i+1}/{tot}) The image from the link '{img['img_url']}' has been saved as a file at '{file_path}'.")
+        except Exception as message:
+            print(f"({i+1}/{tot}) {message}")
     write_json_file(data, DATA_FILE)
 
 

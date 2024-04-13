@@ -14,17 +14,22 @@ image_size = "smaller_square"  # smaller_square/small/medium/large
 
 
 def init():
-    global current_scrolls, scroll_time, old_height, projects_list_xpath, driver
+    global current_scrolls, scroll_time, old_height, projects_list_xpath, driver, projects_list_xpaths
     # initialization
     current_scrolls = 0
     scroll_time = 3
     old_height = 0
-    projects_list_xpath = '/html/body/div[2]/app-root/app-layout/search-artwork/div[5]/projects-list/div/projects-list-item'
+    projects_list_xpaths = {
+        "created_with_ai": '/html/body/div[2]/app-root/app-layout/search-artwork/div[5]/projects-list/div/projects-list-item',
+        "not_created_with_ai": '/html/body/div[2]/app-root/app-layout/ng-component/div[4]/div/div[2]/channel-project-list/div/projects-list/div/projects-list-item'
+    }
+    projects_list_xpath = ''
 
     # Webdriver setting
     opt = webdriver.ChromeOptions()
     opt.add_argument("disable-extensions")
     driver = webdriver.Chrome(options=opt)
+
 
 def check_height():
     new_height = driver.execute_script("return document.body.scrollHeight")
@@ -35,10 +40,14 @@ def scroll():
     global old_height, current_scrolls
 
     while current_scrolls < total_scrolls:
-        old_height = driver.execute_script("return document.body.scrollHeight")
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        WebDriverWait(driver, scroll_time, 0.05).until(lambda driver: check_height())
-        current_scrolls += 1
+        try:
+            old_height = driver.execute_script("return document.body.scrollHeight")
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            WebDriverWait(driver, scroll_time, 0.05).until(lambda driver: check_height())
+            current_scrolls += 1
+        except Exception as message:
+            print(message)
+            break
 
 
 def replace_image_size(url, size):
@@ -56,7 +65,7 @@ def get_image_urls():
     for link in links:
         url = replace_image_size(link.find_elements(By.TAG_NAME, 'img')[1].get_attribute('src'), image_size)
         img_urls.append(url)
-        print(f"({i+1}/{tot}) Successfully crawled the image link: {url}")
+        print(f"({i + 1}/{tot}) Successfully crawled the image link: {url}")
         i += 1
     return img_urls
 
@@ -96,12 +105,12 @@ def update_image_urls(img_urls, data):
 
 
 def get_urls(tp, tot_scr, img_siz):
-    global category, total_scrolls, image_size, driver, opt
+    global category, total_scrolls, image_size, driver, opt, projects_list_xpath
+    init()
     category = tp
+    projects_list_xpath = projects_list_xpaths[tp]
     total_scrolls = tot_scr
     image_size = img_siz
-
-    init()
     URL = read_json_file(SOURCE_FILE)
     driver.get(URL[category])
     data = read_json_file(DATA_FILE)

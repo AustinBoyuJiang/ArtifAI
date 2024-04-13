@@ -1,4 +1,4 @@
 {
     "created_with_ai": "https://www.artstation.com/search?sort_by=relevance&category_ids_include=27&tags_include=CreatedWithAI",
-    "not_created_with_ai": "https://www.artstation.com/search?sort_by=relevance&category_ids_include=27&tags_exclude=CreatedWithAI"
+    "not_created_with_ai": "https://www.artstation.com/?sort_by=trending&dimension=all&include_ai=false"
 }
