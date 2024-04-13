@@ -40,9 +40,11 @@ def image_source(image_data):
     image_data = bytes(image_data)
     with open(image_file_path, 'wb') as file:
         file.write(image_data)
+    with open('../../api.json', 'r') as file:
+        api_key = json.load(file)['serp-api-key']
     params = {
         "engine": "google_reverse_image",
-        "api_key": "replace with your API key",
+        "api_key": api_key,
         "image_url": f"http://artifai.aj-coder.com/public/{image_id}.png",
     }
     search = GoogleSearch(params)

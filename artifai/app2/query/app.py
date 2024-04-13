@@ -6,8 +6,11 @@ import json
 app = Flask(__name__)
 CORS(app)
 
+with open('../../api.json', 'r') as file:
+    api_key = json.load(file)['openai-api-key']
+
 client = OpenAI(
-    api_key='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',
+    api_key=api_key,
 )
 
 
