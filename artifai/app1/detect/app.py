@@ -42,7 +42,7 @@ def image_source(image_data):
         file.write(image_data)
     params = {
         "engine": "google_reverse_image",
-        "api_key": "d4dc92488ee97243cee1f031fd12f6f5faf4ec0c36f6651d13136815d34ecfe8",
+        "api_key": "replace with your API key",
         "image_url": f"http://artifai.aj-coder.com/public/{image_id}.png",
     }
     search = GoogleSearch(params)
