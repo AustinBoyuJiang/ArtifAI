@@ -27,7 +27,6 @@ def gpt(content):
     message = client.chat.completions.create(
         model="gpt-3.5-turbo",
         temperature=0.3,
-        max_tokens=2048,
         messages=content,
     )
     return message.choices[0].message.content
