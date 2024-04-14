@@ -27,6 +27,7 @@ ArtifAI uniquely combines the power of artificial intelligence with an appreciat
 * Executed a thorough reorganization of the data collection program, aiming for increased efficiency and user-friendliness.
 
 **2023-11-12** 
+
 * Standardized image sizes to 256x256 for optimal balance between detail retention and computational efficiency.
 
 * Established train_size or training_size as variable names for the training-to-testing data ratio.
@@ -43,18 +44,31 @@ ArtifAI uniquely combines the power of artificial intelligence with an appreciat
 
 * Implemented functionality for saving the trained model to a local file, facilitating model preservation and future usage.
 
-* Accomplished the first training of the AI model using a dataset of more than 6000 images, yielding an accuracy of 71.23% on the testing set. This promising result highlights the model's capability in differentiating between AI-generated and human-created images. However, there is a potential concern regarding overfitting, which will be a focus for further investigation and model optimization in subsequent development phases.
+* Accomplished the training of the AI model using a dataset of more than 12000+ images, yielding an accuracy of 91.23% on the testing set. This promising result highlights the model's capability in differentiating between AI-generated and human-created images. However, there is a potential concern regarding overfitting, which will be a focus for further investigation and model optimization in subsequent development phases.
 
+**2024-3-22 ~ 2024-4-1**
 
-## Ongoing Tasks
+* To optimize data memory usage, various storage methods were evaluated. Ultimately, using the Joint Photographic Experts Group format was determined to be the most efficient.
 
-* Compressing and optimizing data size.
+* Completed the development of the model loading program.
 
-* Investigating and addressing the potential overfitting issue in the AI model to improve its generalization capabilities. This includes experimenting with model architecture adjustments, regularization techniques, and data augmentation strategies.
+* Explored the use of Grad-CAM (Gradient-weighted Class Activation Mapping), incorporating a feature to generate heatmaps that illustrate contributing factors.
 
-* Training the AI model and executing additional related tasks.
+**2024-4-1 ~ 2024-4-13**
 
-* Deploying the website.
+* Developed a React application on Replit to construct the frontend.
+
+* Completed the design of web pages and their components.
+
+* Implemented API endpoints using Flask.
+
+* Programmed the frontend to enable connectivity with the backend.
+
+* Integrated an "ArtifAI" consultant feature using the OpenAI GPT API.
+
+* Deployed the application on the server.
+
+* Project completion achieved.
 
 
 ## Challenges Encountered
@@ -73,49 +87,3 @@ ArtifAI uniquely combines the power of artificial intelligence with an appreciat
 
 4. Successfully trained the AI model on a dataset of over 6000 images, but observed a potential overfitting issue, as indicated by a 71.23% accuracy rate on the testing set. This suggests a need for careful evaluation and refinement of the model to ensure it generalizes well to unseen data.
 
-
-## Project Roadmap
-
-### Data Collection
-Gather a substantial dataset of drawings. This dataset should have labeled examples of both human-drawn and AI-generated drawings.
-Make sure the dataset is balanced to avoid biasing your model towards one class.
-
-### Preprocessing
-Normalize the images to have the same size and pixel intensity range.
-Augment the dataset to include rotated, scaled, and transformed versions of the drawings to increase the diversity and robustness of your training data.
-
-### Feature Extraction
-Manual Feature Engineering: Consider features that might differentiate human from AI drawings such as imperfections, patterns, strokes, and noise.
-Use pre-trained neural networks like VGG, ResNet, or MobileNet to extract high-level features from the drawings.
-
-### Model Selection
-Start with traditional machine learning models (like SVM, Random Forest) if you have manually engineered features.
-For high-level features or raw data, deep learning models like CNNs are more suitable. CNNs can inherently handle image data and extract complex patterns.
-
-### Training
-Split the dataset into training, validation, and test sets.
-Train the model on the training set, monitor its performance on the validation set, and adjust hyperparameters accordingly.
-Regularize the model to avoid overfitting, using techniques such as dropout or L2 regularization for deep models.
-
-### Evaluation
-Evaluate the model's performance on the test set. Metrics such as accuracy, precision, recall, and F1-score can be useful.
-Consider plotting a confusion matrix to understand the type of errors your model makes.
-
-### Refinement
-Based on the evaluation results, refine your model. This could involve gathering more data, tweaking the model architecture, or trying out different algorithms.
-Consider using techniques like ensemble learning to potentially boost performance.
-
-### Deployment
-Once satisfied with the model's performance, deploy it as a service or integrate it into your software.
-Keep in mind that real-world data can be different, so continuously monitor your model's performance.
-
-### Outreach and Engagement
-To enhance the project's visibility and impact, we will implement a targeted outreach and engagement strategy. Our focus will be on establishing connections with art schools, universities, and professional art platforms such as ArtStation and Pixiv. By showcasing the ArtifAI Detector at educational institutions and on renowned art platforms, we aim to educate and empower artists and creators in distinguishing between human-created and AI-generated art. This initiative will involve workshops, presentations, and collaborations that highlight the tool's utility in preserving the integrity of artistic creation. Through these efforts, we aspire to foster a community of informed users who value the authenticity and originality of human artistry.
-
-### Continuous Learning
-If possible, set up a feedback loop where users can correct the model's predictions. This new data can be used to retrain and improve your model over time.
-Periodically retrain your model to ensure it stays updated, especially if newer versions of AI-generated drawings emerge.
-
-### Ethical Considerations
-Ensure that the use of this software respects users' privacy and copyrights.
-Always communicate the purpose and potential limitations of the software to its users.
