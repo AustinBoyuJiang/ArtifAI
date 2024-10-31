@@ -45,7 +45,7 @@ def image_source(image_data):
     params = {
         "engine": "google_reverse_image",
         "api_key": api_key,
-        "image_url": f"http://artifai.aj-coder.com/public/{image_id}.png",
+        "image_url": f"https://artifai.aj-coder.com/public/{image_id}.png",
     }
     search = GoogleSearch(params)
     results = search.get_dict()
