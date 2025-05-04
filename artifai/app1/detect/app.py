@@ -118,7 +118,7 @@ def overlay_heatmap(heatmap, original_img, alpha=0.4):
 
 @app.route('/detect', methods=['POST'])
 def predict():
-    try:
+    # try:
         count_use(4)
         data = request.get_json(force=True)
         if 'image' not in data:
@@ -142,8 +142,8 @@ def predict():
             "heatmap": heatmap_image_base64,
             "sources": image_source(image_data),
         })
-    except Exception as e:
-        return jsonify({'error': 'Failed to process the image', 'details': str(e)}), 500
+    # except Exception as e:
+    #     return jsonify({'error': 'Failed to process the image', 'details': str(e)}), 500
 
 
 if __name__ == '__main__':

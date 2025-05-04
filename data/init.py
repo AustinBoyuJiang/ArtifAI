@@ -22,16 +22,12 @@ data = {
 
 
 def clear_and_create_dir(path):
-    # Check if the directory already exists
     if os.path.exists(path):
-        # Clear all the contents of the directory
         shutil.rmtree(path)
-    # Create the directory
     os.makedirs(path)
 
 
 def setup_directory_structure(base_path):
-    # Loop through the paths and create/clear them
     for path in paths:
         full_path = os.path.join(base_path, path)
         clear_and_create_dir(full_path)

@@ -15,7 +15,6 @@ image_size = "smaller_square"  # smaller_square/small/medium/large
 
 def init():
     global current_scrolls, scroll_time, old_height, projects_list_xpath, driver, projects_list_xpaths
-    # initialization
     current_scrolls = 0
     scroll_time = 3
     old_height = 0
@@ -25,7 +24,6 @@ def init():
     }
     projects_list_xpath = ''
 
-    # Webdriver setting
     opt = webdriver.ChromeOptions()
     opt.add_argument("disable-extensions")
     driver = webdriver.Chrome(options=opt)

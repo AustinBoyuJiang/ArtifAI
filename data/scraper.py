@@ -13,21 +13,18 @@ def download(data):
     tot = len(data[category])
 
     for i, img in enumerate(data[category]):
-        if img["id"]:  # not repeated
+        if img["id"]:
             continue
 
-        # file path generation
         data["data_id"] += 1
         file_name = str(data["data_id"]) + ".jpg"
         file_path = os.path.join(raw_data_dir, file_name)
 
-        # download
         try:
             response = requests.get(img["img_url"])
             with open(file_path, 'wb') as file:
                 file.write(response.content)
 
-            # update
             data[category][i]["id"] = data["data_id"]
             data[category][i]["raw_data_path"] = file_path
 
