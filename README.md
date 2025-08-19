@@ -1,6 +1,6 @@
 # ArtifAI Detector
 
-Check out the live deployment of the project on the [ArtfAI website](http://artifai.austinjiang.com) to see it in action!
+Check out the live deployment of the project on the [ArtfAI website](https://artifai.apps.austinjiang.com) to see it in action!
 
 ![ArtifAI website deployment](https://github.com/AustinBoyuJiang/ArtifAI/blob/main/backend/public/outlook.png?raw=true)
 

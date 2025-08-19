@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://artifai.aj-coder.com/</loc>
+      <loc>https://artifai.apps.austinjiang.com/</loc>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://artifai.aj-coder.com/about</loc>
+      <loc>https://artifai.apps.austinjiang.com/about</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://artifai.aj-coder.com/faq</loc>
+      <loc>https://artifai.apps.austinjiang.com/faq</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://artifai.aj-coder.com/api</loc>
+      <loc>https://artifai.apps.austinjiang.com/api</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://artifai.aj-coder.com/team</loc>
+      <loc>https://artifai.apps.austinjiang.com/team</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://artifai.aj-coder.com/contact</loc>
+      <loc>https://artifai.apps.austinjiang.com/contact</loc>
       <priority>0.8</priority>
    </url>
 </urlset>
