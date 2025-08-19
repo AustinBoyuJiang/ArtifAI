@@ -15,7 +15,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__, static_folder='public', static_url_path='/public')
-CORS(app, resources={r"/*": {"origins": "*"}})
+
+# Configure CORS
+from flask_cors import cross_origin
+
+# Simple CORS configuration
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', 'https://artifai.austinjiang.com')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,Accept')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    response.headers.add('Access-Control-Allow-Credentials', 'true')
+    return response
 
 # Load the model and define labels
 model = load_model('./models/model.h5')
@@ -252,6 +263,9 @@ def test_static():
             return jsonify({"status": "error", "message": "Public directory not found"}), 404
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+
+
+
 
 
 if __name__ == '__main__':
