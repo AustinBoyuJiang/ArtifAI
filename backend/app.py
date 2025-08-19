@@ -10,6 +10,11 @@ from io import BytesIO
 import tensorflow as tf
 from PIL import Image
 from serpapi import GoogleSearch
+from openai import OpenAI
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -18,9 +23,14 @@ CORS(app)
 model = load_model('./models/model.h5')
 labels = ['created_with_ai', 'not_created_with_ai']
 
+# Initialize OpenAI client
+client = OpenAI(
+    api_key=os.getenv('OPENAI_API_KEY'),
+)
+
 
 def count_use(cnt):
-    json_path = "../../statistics.json"
+    json_path = "statistics.json"
     with open(json_path, 'r') as file:
         stats = json.load(file)
     stats['uses'] += cnt
@@ -36,16 +46,16 @@ def image_source(image_data):
     data['image id'] = image_id
     with open(json_path, 'w') as file:
         json.dump(data, file)
-    image_file_path = f'../../public/{image_id}.png'
+    image_file_path = f'public/{image_id}.png'
     image_data = bytes(image_data)
     with open(image_file_path, 'wb') as file:
         file.write(image_data)
-    with open('../../api.json', 'r') as file:
-        api_key = json.load(file)['serp-api-key']
+    
+    api_key = os.getenv('SERP_API_KEY')
     params = {
         "engine": "google_reverse_image",
         "api_key": api_key,
-        "image_url": f"https://artifai.aj-coder.com/public/{image_id}.png",
+        "image_url": f"https://artifa.apps.austinjiang.com/public/{image_id}.png",
     }
     search = GoogleSearch(params)
     results = search.get_dict()
@@ -116,9 +126,18 @@ def overlay_heatmap(heatmap, original_img, alpha=0.4):
     return img_str
 
 
+def gpt(content):
+    message = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        temperature=0.3,
+        messages=content,
+    )
+    return message.choices[0].message.content
+
+
 @app.route('/detect', methods=['POST'])
 def predict():
-    # try:
+    try:
         count_use(4)
         data = request.get_json(force=True)
         if 'image' not in data:
@@ -142,9 +161,23 @@ def predict():
             "heatmap": heatmap_image_base64,
             "sources": image_source(image_data),
         })
-    # except Exception as e:
-    #     return jsonify({'error': 'Failed to process the image', 'details': str(e)}), 500
+    except Exception as e:
+        return jsonify({'error': 'Failed to process the image', 'details': str(e)}), 500
+
+
+@app.route('/query', methods=['POST'])
+def query():
+    try:
+        content = request.get_json(force=True)
+        count_use(len(content))
+        return jsonify({
+            "error": None,
+            "response": gpt(content),
+        })
+    except Exception as e:
+        return jsonify({'error': 'Failed to process the message', 'details': str(e)}), 500
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    # For development only
+    app.run(debug=True, host='0.0.0.0', port=5000)

@@ -2,8 +2,20 @@
 /model/data/data/processed/
 /model/data/data/imageDataInfo.json
 /model/src/models
-/backend/api.json
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging
+# Frontend dependencies
 /frontend/node_modules
+/frontend/dist
+/frontend/build
+
+# Backend temporary files
+/backend/public/*.png
+/backend/public/*.jpg
+/backend/public/*.jpeg
 
 
 
@@ -53,7 +65,8 @@ ipython_config.py
 *.sql
 *.sqlite
 *.npy
-data.json
+# Remove data.json from ignore since we moved it to backend/
+# data.json
 
 # OS generated files
 .DS_Store

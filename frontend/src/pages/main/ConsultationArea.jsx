@@ -56,7 +56,7 @@ export default function ConsultationArea({ display, position }) {
         try {
             let transformed_messages = transformMessages(messages);
             setIsFetching(true);
-            const response = await fetch('http://artifai.aj-coder.com/app2/query', {
+            const response = await fetch('https://artifa.apps.austinjiang.com/query', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
