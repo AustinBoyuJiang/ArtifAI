@@ -29,10 +29,19 @@ OPENAI_API_KEY=your_openai_api_key_here
    - Set branch to `main`
 
 2. **Deploy via Git Push**
+   
+   **Option A: Manual deployment**
    ```bash
    git add .
    git commit -m "Deploy to production"
    git push origin main
+   git lfs push origin main  # Push LFS files
+   ```
+   
+   **Option B: Using deployment script**
+   ```bash
+   chmod +x deploy.sh
+   ./deploy.sh
    ```
 
 3. **Automatic Deployment**
