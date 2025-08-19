@@ -9,8 +9,6 @@ import json
 from io import BytesIO
 import tensorflow as tf
 from PIL import Image
-from serpapi import GoogleSearch
-from openai import OpenAI
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -23,13 +21,28 @@ CORS(app)
 model = load_model('./models/model.h5')
 labels = ['created_with_ai', 'not_created_with_ai']
 
-# Initialize OpenAI client
-openai_api_key = os.getenv('OPENAI_API_KEY')
-if not openai_api_key:
-    print("Warning: OPENAI_API_KEY not found in environment variables")
-    client = None
-else:
-    client = OpenAI(api_key=openai_api_key)
+# Initialize OpenAI
+try:
+    import openai
+    openai_api_key = os.getenv('OPENAI_API_KEY')
+    if openai_api_key:
+        openai.api_key = openai_api_key
+        print("OpenAI API initialized successfully")
+    else:
+        print("Warning: OPENAI_API_KEY not found in environment variables")
+        openai.api_key = None
+except ImportError as e:
+    print(f"Warning: OpenAI import failed: {e}")
+    openai = None
+
+# Initialize SerpAPI
+try:
+    from serpapi import GoogleSearch
+    serp_available = True
+    print("SerpAPI initialized successfully")
+except ImportError as e:
+    print(f"Warning: SerpAPI import failed: {e}")
+    serp_available = False
 
 
 def count_use(cnt):
@@ -42,6 +55,10 @@ def count_use(cnt):
 
 
 def image_source(image_data):
+    if not serp_available:
+        print("Warning: SerpAPI not available, skipping image source search")
+        return []
+        
     api_key = os.getenv('SERP_API_KEY')
     if not api_key:
         print("Warning: SERP_API_KEY not found, skipping image source search")
@@ -60,23 +77,29 @@ def image_source(image_data):
         file.write(image_data)
     
     try:
-        params = {
+        # Create GoogleSearch instance
+        search = GoogleSearch({
             "engine": "google_reverse_image",
             "api_key": api_key,
-            "image_url": f"https://artifa.apps.austinjiang.com/public/{image_id}.png",
-        }
-        search = GoogleSearch(params)
+            "image_url": f"https://artifa.apps.austinjiang.com/public/{image_id}.png"
+        })
         results = search.get_dict()
+        
+        # Clean up temporary file
         if os.path.exists(image_file_path):
             os.remove(image_file_path)
-        if results.get("inline_images"):
+            
+        # Extract results
+        if results and results.get("inline_images"):
             results = results["inline_images"]
         else:
             results = []
+            
         count_use(len(results))
         return results
     except Exception as e:
         print(f"Error in image source search: {e}")
+        # Clean up temporary file on error
         if os.path.exists(image_file_path):
             os.remove(image_file_path)
         return []
@@ -140,16 +163,16 @@ def overlay_heatmap(heatmap, original_img, alpha=0.4):
 
 
 def gpt(content):
-    if not client:
+    if not openai or not openai.api_key:
         return "Sorry, the GPT service is currently unavailable due to missing API configuration."
     
     try:
-        message = client.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             temperature=0.3,
             messages=content,
         )
-        return message.choices[0].message.content
+        return response.choices[0].message.content
     except Exception as e:
         print(f"Error in GPT request: {e}")
         return f"Sorry, there was an error processing your request: {str(e)}"
