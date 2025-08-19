@@ -1,0 +1,59 @@
+.draggable-circle {
+    position: fixed;
+    z-index: 10000;
+    transform: scaleX(1) scaleY(1);
+}
+
+.event-handler {
+    width: 60px;
+    height: 60px;
+    user-select: auto;
+    cursor: grab;
+    z-index: 11000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0, 1);
+    transform: scaleX(1) scaleY(1);
+    transition: transform 0.3s ease;
+}
+
+    .event-handler:hover {
+        background-color: #666666;
+        box-shadow: 0 0 15px rgba(80,80,80, 1);
+    }
+
+    .event-handler:active {
+        cursor: grabbing;
+        user-select: none;
+        transform: scaleX(0.9) scaleY(0.9);
+    }
+
+.message-image {
+    width: 35px;
+    height: 35px;
+    user-select: none;
+}
+
+.red-dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dot-text {
+    margin-left: 1px;
+    margin-bottom: 1px;
+}

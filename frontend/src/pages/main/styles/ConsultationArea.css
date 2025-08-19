@@ -1,0 +1,79 @@
+.consultation-area {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.messages-container {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 16px;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    white-space: pre-wrap;
+}
+
+    .message.user {
+        align-self: flex-end;
+        background-color: #4A90E2;
+        color: #fff;
+    }
+
+    .message.gpt {
+        align-self: flex-start;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+.consultation-input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 0 0 12px 0;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #ddd;
+    resize: none;
+}
+
+.consultation-submit {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+    .consultation-submit:hover {
+        background-color: #357ABD;
+    }
+
+    .consultation-submit:disabled {
+        background-color: #A0B9D9;
+        color: #cccccc;
+        cursor: not-allowed;
+    }

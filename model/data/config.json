@@ -1,0 +1,18 @@
+{
+    "clear": false,
+    "image_size": "smaller_square",
+    "test_size": 0.2,
+    "random_state": 62,
+    "created_with_ai": {
+        "total_scrolls": 2000,
+        "raw_data_dir": "data\\raw\\created_with_ai",
+        "processed_training_data_dir": "data\\processed\\training\\created_with_ai",
+        "processed_testing_data_dir": "data\\processed\\testing\\created_with_ai"
+    },
+    "not_created_with_ai": {
+        "total_scrolls": 0,
+        "raw_data_dir": "data\\raw\\not_created_with_ai",
+        "processed_training_data_dir": "data\\processed\\training\\not_created_with_ai",
+        "processed_testing_data_dir": "data\\processed\\testing\\not_created_with_ai"
+    }
+}
