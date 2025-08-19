@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/cache/apt/*
 
 # Copy requirements first for better caching
-COPY requirements.txt .
+COPY backend/requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip \
@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir --upgrade pip \
     && pip cache purge
 
 # Copy application code
-COPY . .
+COPY backend/ .
 
 # Create public directory for temporary files
 RUN mkdir -p public

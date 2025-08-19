@@ -24,9 +24,12 @@ model = load_model('./models/model.h5')
 labels = ['created_with_ai', 'not_created_with_ai']
 
 # Initialize OpenAI client
-client = OpenAI(
-    api_key=os.getenv('OPENAI_API_KEY'),
-)
+openai_api_key = os.getenv('OPENAI_API_KEY')
+if not openai_api_key:
+    print("Warning: OPENAI_API_KEY not found in environment variables")
+    client = None
+else:
+    client = OpenAI(api_key=openai_api_key)
 
 
 def count_use(cnt):
@@ -39,6 +42,11 @@ def count_use(cnt):
 
 
 def image_source(image_data):
+    api_key = os.getenv('SERP_API_KEY')
+    if not api_key:
+        print("Warning: SERP_API_KEY not found, skipping image source search")
+        return []
+    
     json_path = "data.json"
     with open(json_path, 'r') as file:
         data = json.load(file)
@@ -51,22 +59,27 @@ def image_source(image_data):
     with open(image_file_path, 'wb') as file:
         file.write(image_data)
     
-    api_key = os.getenv('SERP_API_KEY')
-    params = {
-        "engine": "google_reverse_image",
-        "api_key": api_key,
-        "image_url": f"https://artifa.apps.austinjiang.com/public/{image_id}.png",
-    }
-    search = GoogleSearch(params)
-    results = search.get_dict()
-    if os.path.exists(image_file_path):
-        os.remove(image_file_path)
-    if results.get("inline_images"):
-        results = results["inline_images"]
-    else:
-        results = []
-    count_use(len(results))
-    return results
+    try:
+        params = {
+            "engine": "google_reverse_image",
+            "api_key": api_key,
+            "image_url": f"https://artifa.apps.austinjiang.com/public/{image_id}.png",
+        }
+        search = GoogleSearch(params)
+        results = search.get_dict()
+        if os.path.exists(image_file_path):
+            os.remove(image_file_path)
+        if results.get("inline_images"):
+            results = results["inline_images"]
+        else:
+            results = []
+        count_use(len(results))
+        return results
+    except Exception as e:
+        print(f"Error in image source search: {e}")
+        if os.path.exists(image_file_path):
+            os.remove(image_file_path)
+        return []
 
 
 def preprocess_image(image, img_size=256):
@@ -127,12 +140,19 @@ def overlay_heatmap(heatmap, original_img, alpha=0.4):
 
 
 def gpt(content):
-    message = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        temperature=0.3,
-        messages=content,
-    )
-    return message.choices[0].message.content
+    if not client:
+        return "Sorry, the GPT service is currently unavailable due to missing API configuration."
+    
+    try:
+        message = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            temperature=0.3,
+            messages=content,
+        )
+        return message.choices[0].message.content
+    except Exception as e:
+        print(f"Error in GPT request: {e}")
+        return f"Sorry, there was an error processing your request: {str(e)}"
 
 
 @app.route('/detect', methods=['POST'])
