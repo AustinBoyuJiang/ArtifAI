@@ -14,8 +14,8 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-app = Flask(__name__)
-CORS(app)
+app = Flask(__name__, static_folder='public', static_url_path='/public')
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load the model and define labels
 model = load_model('./models/model.h5')
@@ -85,7 +85,9 @@ def image_source(image_data):
         })
         results = search.get_dict()
         
-        # Clean up temporary file
+        # Clean up temporary file after a delay to ensure API can access it
+        import time
+        time.sleep(2)  # Wait 2 seconds for API to access the image
         if os.path.exists(image_file_path):
             os.remove(image_file_path)
             
@@ -229,6 +231,27 @@ def health_check():
 @app.route('/', methods=['GET'])
 def root():
     return jsonify({"message": "ArtifAI Backend API", "status": "running"}), 200
+
+
+@app.route('/test-static', methods=['GET'])
+def test_static():
+    """Test endpoint to verify static file serving"""
+    try:
+        # Check if public directory exists and is accessible
+        public_dir = os.path.join(os.getcwd(), 'public')
+        if os.path.exists(public_dir):
+            files = os.listdir(public_dir)
+            return jsonify({
+                "status": "success",
+                "public_dir": public_dir,
+                "files": files,
+                "static_url_path": app.static_url_path,
+                "static_folder": app.static_folder
+            }), 200
+        else:
+            return jsonify({"status": "error", "message": "Public directory not found"}), 404
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 if __name__ == '__main__':

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtifAI Static File Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { border-color: #4CAF50; background-color: #f1f8e9; }
+        .error { border-color: #f44336; background-color: #ffebee; }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>ArtifAI Static File Access Test</h1>
+    <p>This page tests if static files are accessible from the backend.</p>
+    
+    <div class="test-item success">
+        <h3>✅ Test 1: Outlook Image</h3>
+        <p>If you can see the image below, static file serving is working:</p>
+        <img src="outlook.png" alt="Outlook Image" onerror="this.parentElement.className='test-item error'; this.parentElement.innerHTML+='<p style=color:red>❌ Image failed to load</p>'">
+    </div>
+    
+    <div class="test-item success">
+        <h3>✅ Test 2: Icon Image</h3>
+        <p>If you can see the icon below, static file serving is working:</p>
+        <img src="icon.png" alt="Icon" onerror="this.parentElement.className='test-item error'; this.parentElement.innerHTML+='<p style=color:red>❌ Icon failed to load</p>'">
+    </div>
+    
+    <div class="test-item success">
+        <h3>✅ Test 3: Sitemap XML</h3>
+        <p>Check if sitemap.xml is accessible:</p>
+        <a href="sitemap.xml" target="_blank">View sitemap.xml</a>
+    </div>
+    
+    <script>
+        // Test if images loaded successfully
+        window.addEventListener('load', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.naturalWidth === 0) {
+                    img.parentElement.className = 'test-item error';
+                    img.parentElement.innerHTML += '<p style="color:red">❌ Image failed to load</p>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
