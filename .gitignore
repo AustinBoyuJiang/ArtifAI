@@ -16,7 +16,6 @@
 /backend/public/*.png
 /backend/public/*.jpg
 /backend/public/*.jpeg
-*.tar
 
 
 
