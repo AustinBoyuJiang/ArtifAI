@@ -178,6 +178,16 @@ def query():
         return jsonify({'error': 'Failed to process the message', 'details': str(e)}), 500
 
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "healthy", "service": "artifa-backend"}), 200
+
+
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({"message": "ArtifAI Backend API", "status": "running"}), 200
+
+
 if __name__ == '__main__':
     # For development only
     app.run(debug=True, host='0.0.0.0', port=5000)
