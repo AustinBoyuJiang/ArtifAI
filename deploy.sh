@@ -47,5 +47,5 @@ git lfs push origin main
 
 echo "✅ Deployment initiated!"
 echo "🌐 Check your CapRover dashboard for build status"
-echo "🔗 App will be available at: https://artifa.apps.austinjiang.com"
-echo "❤️  Health check: https://artifa.apps.austinjiang.com/health"
+echo "🔗 App will be available at: https://artifai.apps.austinjiang.com"
+echo "❤️  Health check: https://artifai.apps.austinjiang.com/health"

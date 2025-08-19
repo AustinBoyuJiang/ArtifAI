@@ -81,7 +81,7 @@ def image_source(image_data):
         search = GoogleSearch({
             "engine": "google_reverse_image",
             "api_key": api_key,
-            "image_url": f"https://artifa.apps.austinjiang.com/public/{image_id}.png"
+            "image_url": f"https://artifai.apps.austinjiang.com/public/{image_id}.png"
         })
         results = search.get_dict()
         

@@ -9,7 +9,7 @@ export default function APIPage() {
 
             <h2>API Endpoint</h2>
             <p>The base URL for the API is:</p>
-            <code>https://artifa.apps.austinjiang.com/detect</code>
+            <code>https://artifai.apps.austinjiang.com/detect</code>
 
             <h2>Request Format</h2>
             <p>To submit an image for analysis, send a POST request with the image encoded in base64 format. The request should include the following headers and body:</p>
@@ -36,7 +36,7 @@ export default function APIPage() {
             <h2>Example Request and Response</h2>
             <p>Here is an example of how to make a request using JavaScript's Fetch API:</p>
             <pre>
-                {`fetch('https://artifa.apps.austinjiang.com/detect', {
+                {`fetch('https://artifai.apps.austinjiang.com/detect', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',

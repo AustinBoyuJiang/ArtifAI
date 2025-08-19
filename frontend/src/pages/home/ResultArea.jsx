@@ -91,7 +91,7 @@ function ResultArea({ img, id, fileName }) {
     }, [img]);
 
     const fetchPredictions = (image) => {
-        const url = 'https://artifa.apps.austinjiang.com/detect';
+        const url = 'https://artifai.apps.austinjiang.com/detect';
         const options = {
             method: 'POST',
             headers: {

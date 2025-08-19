@@ -7,7 +7,7 @@ This project is configured for **Git-based deployment** using CapRover with the 
 ### Prerequisites
 
 1. CapRover server running
-2. Domain configured (artifa.apps.austinjiang.com)
+2. Domain configured (artifai.apps.austinjiang.com)
 3. Git LFS installed and configured
 4. Git repository connected to CapRover app
 
@@ -48,7 +48,7 @@ OPENAI_API_KEY=your_openai_api_key_here
    - CapRover will automatically detect the push
    - Build using `./backend/Dockerfile` (defined in `captain-definition`)
    - Deploy the new version
-   - Application available at https://artifa.apps.austinjiang.com
+   - Application available at https://artifai.apps.austinjiang.com
 
 ### Git LFS Considerations
 
@@ -97,7 +97,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 3. **Deployment Verification**
    - Check CapRover logs for build status
-   - Verify health endpoint: `https://artifa.apps.austinjiang.com/health`
+   - Verify health endpoint: `https://artifai.apps.austinjiang.com/health`
    - Monitor application logs in CapRover dashboard
 
 ### Troubleshooting
