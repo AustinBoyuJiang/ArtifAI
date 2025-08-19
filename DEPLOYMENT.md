@@ -1,37 +1,51 @@
 # ArtifAI Deployment Guide
 
-## CapRover Deployment
+## CapRover Git Deployment
 
-This project is configured for deployment using CapRover with the following setup:
+This project is configured for **Git-based deployment** using CapRover with the following setup:
 
 ### Prerequisites
 
 1. CapRover server running
 2. Domain configured (artifa.apps.austinjiang.com)
 3. Git LFS installed and configured
+4. Git repository connected to CapRover app
 
 ### Environment Variables
 
-Before deploying, configure the following environment variables in CapRover:
+Before deploying, configure the following environment variables in CapRover dashboard:
 
 ```
 SERP_API_KEY=your_serp_api_key_here
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-### Deployment Steps
+### Git Deployment Steps
 
-1. **Push to Git Repository**
+1. **Connect Git Repository to CapRover**
+   - In CapRover dashboard, go to your app
+   - Navigate to "Deployment" tab
+   - Connect your Git repository (GitHub/GitLab/etc.)
+   - Set branch to `main`
+
+2. **Deploy via Git Push**
    ```bash
    git add .
    git commit -m "Deploy to production"
    git push origin main
    ```
 
-2. **Deploy via CapRover**
-   - The `captain-definition` file is configured to use `./backend/Dockerfile`
-   - CapRover will automatically build and deploy the application
-   - The application will be available at https://artifa.apps.austinjiang.com
+3. **Automatic Deployment**
+   - CapRover will automatically detect the push
+   - Build using `./backend/Dockerfile` (defined in `captain-definition`)
+   - Deploy the new version
+   - Application available at https://artifa.apps.austinjiang.com
+
+### Git LFS Considerations
+
+- Model files (`*.h5`) are tracked with Git LFS
+- CapRover will automatically handle LFS files during Git deployment
+- No manual tar/zip uploads needed
 
 ### File Structure
 
@@ -56,14 +70,46 @@ OPENAI_API_KEY=your_openai_api_key_here
 - `POST /detect` - Image AI detection
 - `POST /query` - GPT consultation
 
+### Git Deployment Best Practices
+
+1. **Branch Strategy**
+   - Use `main` branch for production deployments
+   - Test changes in feature branches before merging
+   - CapRover will auto-deploy on push to configured branch
+
+2. **Git LFS Management**
+   ```bash
+   # Verify LFS files are tracked
+   git lfs ls-files
+   
+   # Push LFS files
+   git lfs push origin main
+   ```
+
+3. **Deployment Verification**
+   - Check CapRover logs for build status
+   - Verify health endpoint: `https://artifa.apps.austinjiang.com/health`
+   - Monitor application logs in CapRover dashboard
+
 ### Troubleshooting
 
-1. **Missing Environment Variables**: The application will run but some features will be disabled
-2. **Model Loading Issues**: Ensure Git LFS is properly configured
-3. **Build Failures**: Check Docker logs in CapRover dashboard
+1. **Git LFS Issues**: 
+   - Ensure LFS is installed: `git lfs install`
+   - Verify model files: `git lfs ls-files`
+   - Check LFS quota/bandwidth limits
+
+2. **Build Failures**: 
+   - Check CapRover build logs
+   - Verify Dockerfile paths are correct
+   - Ensure all dependencies are in requirements.txt
+
+3. **Missing Environment Variables**: 
+   - Configure in CapRover dashboard under "App Configs"
+   - Application will run with limited functionality if missing
 
 ### Security Notes
 
-- The application runs as a non-root user
-- Environment variables are not stored in the repository
-- Health checks are configured for monitoring
+- Git deployment is more secure than tar uploads
+- Environment variables are not stored in repository
+- Application runs as non-root user in container
+- Health checks configured for monitoring
