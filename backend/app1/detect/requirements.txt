@@ -1,9 +1,0 @@
-Flask==2.1.2
-flask-cors==3.0.10
-tensorflow==2.8.0
-numpy==1.22.3
-opencv-python==4.5.5.64
-Pillow==9.0.1
-Werkzeug==2.2.2
-serpapi==0.1.5
-google-search-results==2.4.2
