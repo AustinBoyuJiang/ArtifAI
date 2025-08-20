@@ -16,17 +16,12 @@ load_dotenv()
 
 app = Flask(__name__, static_folder='public', static_url_path='/public')
 
-# Configure CORS
-from flask_cors import cross_origin
-
-# Simple CORS configuration
-@app.after_request
-def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', 'https://artifai.austinjiang.com')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,Accept')
-    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
-    response.headers.add('Access-Control-Allow-Credentials', 'true')
-    return response
+# Configure CORS - Use Flask-CORS directly
+CORS(app, 
+     origins=['*'],  # Allow all origins for testing
+     methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+     allow_headers=['Content-Type', 'Authorization', 'Accept'],
+     supports_credentials=False)  # Disable credentials for wildcard origin
 
 # Load the model and define labels
 model = load_model('./models/model.h5')
@@ -191,38 +186,78 @@ def gpt(content):
         return f"Sorry, there was an error processing your request: {str(e)}"
 
 
-@app.route('/detect', methods=['POST'])
+@app.route('/detect', methods=['POST', 'OPTIONS'])
+@cross_origin(origins=['*'], supports_credentials=False)
 def predict():
+    if request.method == 'OPTIONS':
+        return '', 204
+    
     try:
+        print("Starting /detect request processing...")
         count_use(4)
-        data = request.get_json(force=True)
-        if 'image' not in data:
-            return jsonify({'error': 'No image provided'}), 400
+        
+        # Parse JSON data
+        try:
+            data = request.get_json(force=True)
+            if 'image' not in data:
+                return jsonify({'error': 'No image provided'}), 400
+        except Exception as e:
+            print(f"JSON parsing error: {e}")
+            return jsonify({'error': 'Invalid JSON data'}), 400
 
-        # Decode the base64 image and convert it to a NumPy array
-        image_data = base64.b64decode(data['image'])
-        image = np.array(Image.open(BytesIO(image_data)))
+        # Decode the base64 image
+        try:
+            image_data = base64.b64decode(data['image'])
+            image = np.array(Image.open(BytesIO(image_data)))
+            print(f"Image decoded successfully, shape: {image.shape}")
+        except Exception as e:
+            print(f"Image decoding error: {e}")
+            return jsonify({'error': 'Invalid image data'}), 400
 
-        processed_img = preprocess_image(image)
-        predictions = model.predict(processed_img)
-        predictions = predictions[0]
-        predicted_class_index = int(predictions[1] > 0.5)
+        # Process image with AI model
+        try:
+            processed_img = preprocess_image(image)
+            print("Image preprocessed successfully")
+            
+            predictions = model.predict(processed_img, verbose=0)  # Disable verbose output
+            predictions = predictions[0]
+            predicted_class_index = int(predictions[1] > 0.5)
+            print(f"Model prediction completed: {predictions.tolist()}")
+        except Exception as e:
+            print(f"AI model error: {e}")
+            return jsonify({'error': 'AI model processing failed', 'details': str(e)}), 500
 
-        heatmap = make_gradcam_heatmap(processed_img, model, 'conv2d_2', predicted_class_index)
-        heatmap_image_base64 = overlay_heatmap(heatmap, image)
+        # Generate heatmap
+        try:
+            heatmap = make_gradcam_heatmap(processed_img, model, 'conv2d_2', predicted_class_index)
+            heatmap_image_base64 = overlay_heatmap(heatmap, image)
+            print("Heatmap generated successfully")
+        except Exception as e:
+            print(f"Heatmap generation error: {e}")
+            # Continue without heatmap
+            heatmap_image_base64 = ""
 
+        # Skip image source search for now to isolate the issue
+        sources = []  # Temporarily disable image source search
+        
+        print("Returning successful response...")
         return jsonify({
             "error": None,
             "predictions": predictions.tolist(),
             "heatmap": heatmap_image_base64,
-            "sources": image_source(image_data),
+            "sources": sources,
         })
     except Exception as e:
+        print(f"Unexpected error in /detect endpoint: {e}")
         return jsonify({'error': 'Failed to process the image', 'details': str(e)}), 500
 
 
-@app.route('/query', methods=['POST'])
+@app.route('/query', methods=['POST', 'OPTIONS'])
+@cross_origin(origins=['*'], supports_credentials=False)
 def query():
+    if request.method == 'OPTIONS':
+        return '', 204
+    
     try:
         content = request.get_json(force=True)
         count_use(len(content))
@@ -263,6 +298,9 @@ def test_static():
             return jsonify({"status": "error", "message": "Public directory not found"}), 404
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+
+
+
 
 
 

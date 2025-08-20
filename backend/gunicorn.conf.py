@@ -1,14 +1,14 @@
 import multiprocessing
 
-# Server socket - CapRover expects port 3000 by default
-bind = "0.0.0.0:3000"
+# Server socket - CapRover expects port 80 by default
+bind = "0.0.0.0:80"
 backlog = 2048
 
 # Worker processes
 workers = multiprocessing.cpu_count() * 2 + 1
 worker_class = "sync"
 worker_connections = 1000
-timeout = 120
+timeout = 300  # Increased timeout for AI model processing
 keepalive = 2
 
 # Restart workers after this many requests, to help prevent memory leaks
