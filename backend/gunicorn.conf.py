@@ -1,7 +1,7 @@
 import multiprocessing
 
-# Server socket - CapRover expects port 80 by default
-bind = "0.0.0.0:80"
+# Server socket - Use port 3000 internally, CapRover will map to 80
+bind = "0.0.0.0:3000"
 backlog = 2048
 
 # Worker processes
